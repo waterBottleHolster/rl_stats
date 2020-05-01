@@ -38,10 +38,8 @@ def team_select(sender):
 	if sender.background_color == (0.140449, 0.341092, 0.842697, 1.0):
 		sender.background_color = (0.842697, 0.391252, 0.210674, 1.0)
 		# This means team == BLUE
-		active_team = "BLUE"
 	else:
 		sender.background_color = (0.140449, 0.341092, 0.842697, 1.0)
-		active_team = "ORANGE"
 		
 def game_result_btn_click(sender):
 	print(sender.name)
@@ -57,7 +55,7 @@ def game_result_btn_click(sender):
 	if v["scrollview1"]["sc1"].selected_index == 0:
 		curr_team = "Orange"
 	elif v["scrollview1"]["sc1"].selected_index == 1:
-		curr_team = "Blue
+		curr_team = "Blue"
 	
 	# CATs is short for categories
 	CATs = ["kickoffs", "game_type", "car_body", "notes", "team", "game_result"]
