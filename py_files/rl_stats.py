@@ -50,7 +50,7 @@ def game_result_btn_click(sender):
 		json_dict = json.load(f)
 		
 	# B/c stats_json is a bunch of nested dicts there are some intermediate steps here.
-	curr_time = datetime.datetime.now()
+	curr_time = str(datetime.datetime.now())
 
 	json_dict[curr_time]["kickoffs"]["whiffs"] = v["scrollview1"]["whiff_count_lbl"].text
 	json_dict[curr_time]["kickoffs"]["lost"] = v["scrollview1"]["loss_count_lbl"].text
