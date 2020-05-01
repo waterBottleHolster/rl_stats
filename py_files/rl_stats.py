@@ -72,13 +72,55 @@ def game_result_btn_click(sender):
 			{"game_result" : sender.title}
 	]
 	
-	json_dict = dict(zip(CATs, act_data))
+	json_dict[curr_time] = dict(zip(CATs, act_data))
 	
 	with open(stats_json_fp, "w") as f:
 		json.dump(json_dict, f, indent = 2)
 	
+	sound.play_effect("Beep")
+	sleep(1)
+	sound.play_effect("Bleep")
+	sleep(1)
+	sound.play_effect("Boing_1")
+	sleep(1)
+	sound.play_effect("Clank")
+	sleep(1)
+	sound.play_effect("Click_1")
+	sleep(1)
+	sound.play_effect("Click_2")
+	sleep(1)
+	sound.play_effect("Clock_1")
+	sleep(1)
 	sound.play_effect("Coin_1")
 	sleep(1)
+	sound.play_effect("Coin_2")
+	sleep(1)
+	sound.play_effect("Crashing")
+	sleep(1)
+	sound.play_effect("Ding_1")
+	sleep(1)
+	sound.play_effect("Ding_2")
+	sleep(1)
+	sound.play_effect("Ding_3")
+	sleep(1)
+	sound.play_effect("Error")
+	sleep(1)
+	sound.play_effect("Explosion_1")
+	sleep(1)
+	sound.play_effect("Footstep")
+	sleep(1)
+	sound.play_effect("Jump")
+	sleep(1)
+	sound.play_effect("Shot")
+	sleep(1)
+	sound.play_effect("Spaceship")
+	sleep(1)
+	sound.play_effect("Woosh_1")
+	sleep(1)
+	sound.play_effect("Woosh_2")
+	sleep(1)
+	
+	
 	
 
 def end_editing(sender):
