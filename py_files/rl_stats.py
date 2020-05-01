@@ -62,8 +62,8 @@ def game_result_btn_click(sender):
 	
 	act_data = [
 			{"whiff" : v["scrollview1"]["whiff_count_lbl"].text, "lost" : v["scrollview1"]["loss_count_lbl"].text, "win" : v["scrollview1"]["win_count_lbl"].text},
-			{"mode" : v["scrollview1"]["game_mode_ddb"].text, "competitive" : str(v["scrollview1"]["competitive_switch"].value), "party" : str(v["scrollview1"]["party_switch"].value)},
-			{"body" : v["scrollview1"]["vehicle_ddb"].text, "topper" : v["scrollview1"]["topper_switch"].value, "antenna" : v["scrollview1"]["antenna_switch"].value},
+			{"mode" : game_mode_ddb.text, "competitive" : str(v["scrollview1"]["competitive_switch"].value), "party" : str(v["scrollview1"]["party_switch"].value)},
+			{"body" : vehicle_ddb.text, "topper" : v["scrollview1"]["topper_switch"].value, "antenna" : v["scrollview1"]["antenna_switch"].value},
 			{"notes" : v["scrollview1"]["textview1"].text},
 			{"team" : curr_team},
 			{"game_result" : sender.name}
