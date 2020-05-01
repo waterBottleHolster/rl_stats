@@ -1,0 +1,628 @@
+[
+  {
+    "nodes" : [
+      {
+        "nodes" : [
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{69, 6}, {172, 33}}",
+            "class" : "Label",
+            "attributes" : {
+              "uuid" : "5CD52BE4-130F-437F-B6AF-12E53C5EEC7B",
+              "font_size" : 26,
+              "corner_radius" : 15,
+              "frame" : "{{85, 304}, {150, 32}}",
+              "border_width" : 0,
+              "alignment" : "center",
+              "text_color" : "RGBA(0.003701,0.007491,0.002185,1.000000)",
+              "text" : "KICKOFFS",
+              "font_name" : "Futura-CondensedExtraBold",
+              "class" : "Label",
+              "name" : "label1",
+              "flex" : "WHLRTB"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{31, 40.5}, {80, 52}}",
+            "class" : "Button",
+            "attributes" : {
+              "uuid" : "FBF263CC-8EF7-4281-B69E-8ECCA00EED1A",
+              "font_size" : 15,
+              "corner_radius" : 15,
+              "background_color" : "RGBA(0.790262,0.390427,0.230493,1.000000)",
+              "frame" : "{{120, 304}, {80, 32}}",
+              "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_width" : 0,
+              "custom_attributes" : "",
+              "title" : "WHIFF",
+              "action" : "ko_btn_click",
+              "alpha" : 1,
+              "class" : "Button",
+              "name" : "ko_whiff_btn",
+              "flex" : "WHLRTB"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{119, 40.5}, {80, 52}}",
+            "class" : "Button",
+            "attributes" : {
+              "uuid" : "12E8C0A6-E7F7-4ED3-BFFF-3F049DDBABA6",
+              "font_size" : 15,
+              "corner_radius" : 15,
+              "background_color" : "RGBA(0.670412,0.139669,0.139669,1.000000)",
+              "frame" : "{{120, 304}, {80, 32}}",
+              "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_width" : 0,
+              "title" : "LOSS",
+              "action" : "ko_btn_click",
+              "class" : "Button",
+              "name" : "ko_loss_btn",
+              "flex" : "WHLRTB"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{208, 40.5}, {80, 52}}",
+            "class" : "Button",
+            "attributes" : {
+              "uuid" : "37F22987-9DFF-49B2-8704-A40A64D3985D",
+              "font_size" : 15,
+              "corner_radius" : 15,
+              "background_color" : "RGBA(0.263421,0.263421,0.790262,1.000000)",
+              "frame" : "{{120, 304}, {80, 32}}",
+              "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_width" : 0,
+              "title" : "WIN",
+              "action" : "ko_btn_click",
+              "class" : "Button",
+              "name" : "ko_win_btn",
+              "flex" : "WHLRTB"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{69, 121}, {172, 33}}",
+            "class" : "Label",
+            "attributes" : {
+              "uuid" : "F386E86C-AE68-4312-ACDA-C6BC453ABAE3",
+              "font_size" : 26,
+              "corner_radius" : 15,
+              "content_height" : 640,
+              "frame" : "{{85, 304}, {150, 32}}",
+              "content_width" : 320,
+              "border_width" : 0,
+              "alignment" : "center",
+              "text" : "GAME MODE",
+              "text_color" : "RGBA(0.003701,0.007491,0.002185,1.000000)",
+              "font_name" : "Futura-CondensedExtraBold",
+              "class" : "Label",
+              "name" : "label2",
+              "flex" : "WHLRTB"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{31, 90}, {80, 32}}",
+            "class" : "Label",
+            "attributes" : {
+              "uuid" : "7ECA2D9C-378A-45F9-B538-A932407D6683",
+              "font_size" : 18,
+              "frame" : "{{85, 304}, {150, 32}}",
+              "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "alignment" : "center",
+              "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "text" : "",
+              "font_name" : "<System>",
+              "class" : "Label",
+              "name" : "whiff_count_lbl",
+              "flex" : "WHLRTB"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{208, 90}, {80, 32}}",
+            "class" : "Label",
+            "attributes" : {
+              "uuid" : "3BBB7E46-BBC8-4A9A-B114-0EAF639FF423",
+              "font_size" : 18,
+              "frame" : "{{85, 304}, {150, 32}}",
+              "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "alignment" : "center",
+              "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "text" : "",
+              "font_name" : "<System>",
+              "class" : "Label",
+              "name" : "win_count_lbl",
+              "flex" : "WHLRTB"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{119, 90}, {80, 32}}",
+            "class" : "Label",
+            "attributes" : {
+              "uuid" : "3CF943E1-D7AC-4435-8AC1-6142E48D659F",
+              "font_size" : 18,
+              "content_height" : 640,
+              "frame" : "{{85, 304}, {150, 32}}",
+              "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "content_width" : 320,
+              "border_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "alignment" : "center",
+              "text" : "",
+              "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "font_name" : "<System>",
+              "class" : "Label",
+              "name" : "loss_count_lbl",
+              "flex" : "WHLRTB"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{148, 154.5}, {51, 31}}",
+            "class" : "Switch",
+            "attributes" : {
+              "flex" : "WHLRTB",
+              "action" : "",
+              "frame" : "{{135, 305}, {51, 31}}",
+              "class" : "Switch",
+              "uuid" : "477CB897-18D8-4924-BCAE-067BB7A99AC2",
+              "value" : false,
+              "name" : "competitive_switch"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{194, 154.5}, {114, 31}}",
+            "class" : "Label",
+            "attributes" : {
+              "flex" : "WHLRTB",
+              "font_size" : 18,
+              "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "frame" : "{{85, 304}, {150, 32}}",
+              "uuid" : "E45BE2CD-5F7B-419C-981E-3FD143358CD4",
+              "class" : "Label",
+              "alignment" : "left",
+              "text" : "Competitive?",
+              "name" : "compete_lbl",
+              "font_name" : "<System>"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{148, 184.5}, {51, 31}}",
+            "class" : "Switch",
+            "attributes" : {
+              "flex" : "WHLRTB",
+              "frame" : "{{134, 285}, {51, 31}}",
+              "value" : false,
+              "class" : "Switch",
+              "name" : "party_switch",
+              "uuid" : "4F74B484-CE59-4D1C-A509-AC3BF079BE62"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{200, 184.5}, {114, 32}}",
+            "class" : "Label",
+            "attributes" : {
+              "flex" : "WHLRTB",
+              "font_size" : 18,
+              "frame" : "{{85, 284}, {150, 32}}",
+              "uuid" : "006F6610-992C-4C8D-B04B-79E99F923267",
+              "class" : "Label",
+              "alignment" : "left",
+              "text" : "Partied Up?",
+              "name" : "label3",
+              "font_name" : "<System>"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{69, 216}, {172, 33}}",
+            "class" : "Label",
+            "attributes" : {
+              "uuid" : "239637E6-4286-440F-BE0F-6AC6F4910F3C",
+              "flex" : "WHLRTB",
+              "corner_radius" : 15,
+              "frame" : "{{85, 284}, {150, 32}}",
+              "border_width" : 0,
+              "alignment" : "center",
+              "text_color" : "RGBA(0.003701,0.007491,0.002185,1.000000)",
+              "text" : "VEHICLE",
+              "font_name" : "Futura-CondensedExtraBold",
+              "class" : "Label",
+              "name" : "label4",
+              "font_size" : 26
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{148, 248.5}, {51, 31}}",
+            "class" : "Switch",
+            "attributes" : {
+              "flex" : "WHLRTB",
+              "frame" : "{{135, 285}, {51, 31}}",
+              "value" : false,
+              "class" : "Switch",
+              "name" : "topper_switch",
+              "uuid" : "9C63978A-CEC3-4A16-9371-9A5FAC6C3DB1"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{148, 279.5}, {51, 31}}",
+            "class" : "Switch",
+            "attributes" : {
+              "flex" : "WHLRTB",
+              "frame" : "{{135, 285}, {51, 31}}",
+              "value" : false,
+              "class" : "Switch",
+              "name" : "antenna_switch",
+              "uuid" : "9B047691-CA2B-42F0-8EC5-C13FFAA7C296"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{200, 248.5}, {88, 31}}",
+            "class" : "Label",
+            "attributes" : {
+              "flex" : "WHLRTB",
+              "name" : "label5",
+              "frame" : "{{85, 284}, {150, 32}}",
+              "uuid" : "AEC21452-4130-49E8-AE7A-47C1E9253576",
+              "class" : "Label",
+              "alignment" : "left",
+              "text" : "Topper?",
+              "font_size" : 18,
+              "font_name" : "<System>"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{200, 279.5}, {108, 31}}",
+            "class" : "Label",
+            "attributes" : {
+              "flex" : "WHLRTB",
+              "name" : "label6",
+              "frame" : "{{85, 284}, {150, 32}}",
+              "uuid" : "CF03F0E3-3898-4F0E-A75A-A10B41E7CD1D",
+              "class" : "Label",
+              "alignment" : "left",
+              "text" : "Antenna?",
+              "font_size" : 18,
+              "font_name" : "<System>"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{69, 310.5}, {172, 33}}",
+            "class" : "Label",
+            "attributes" : {
+              "uuid" : "322AFE77-A72C-4BDB-AEE4-6B012A1E0D1D",
+              "font_size" : 26,
+              "corner_radius" : 15,
+              "frame" : "{{85, 434}, {150, 32}}",
+              "border_width" : 0,
+              "alignment" : "center",
+              "text_color" : "RGBA(0.003701,0.007491,0.002185,1.000000)",
+              "text" : "NOTES",
+              "font_name" : "Futura-CondensedExtraBold",
+              "class" : "Label",
+              "name" : "label7",
+              "flex" : "WHLRTB"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{6, 342.5}, {308, 94}}",
+            "class" : "TextView",
+            "attributes" : {
+              "uuid" : "B9C4FC6F-DF85-4CD3-8B08-BA2FDE5633DB",
+              "font_size" : 17,
+              "background_color" : "RGBA(0.908240,0.908240,0.908240,1.000000)",
+              "frame" : "{{60, 350}, {200, 200}}",
+              "editable" : true,
+              "alignment" : "left",
+              "autocorrection_type" : "default",
+              "font_name" : "Futura-CondensedExtraBold",
+              "spellchecking_type" : "default",
+              "class" : "TextView",
+              "name" : "textview1",
+              "flex" : "WH"
+            },
+            "selected" : true
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{69, 436}, {172, 33}}",
+            "class" : "Label",
+            "attributes" : {
+              "uuid" : "AC83EBA5-BA78-4878-9DFB-EB90DD1E7B2A",
+              "font_size" : 26,
+              "corner_radius" : 15,
+              "frame" : "{{85, 434}, {150, 32}}",
+              "border_width" : 0,
+              "alignment" : "center",
+              "text_color" : "RGBA(0.003701,0.007491,0.002185,1.000000)",
+              "text" : "TEAM",
+              "font_name" : "Futura-CondensedExtraBold",
+              "class" : "Label",
+              "name" : "label8",
+              "flex" : "WHLRTB"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{41, 470}, {229, 50}}",
+            "class" : "SegmentedControl",
+            "attributes" : {
+              "flex" : "WHLRTB",
+              "action" : "team_select",
+              "segments" : "BLUE|ORANGE",
+              "frame" : "{{100, 436}, {120, 29}}",
+              "uuid" : "61744A5A-F4E5-4F82-AA48-C953695E2F62",
+              "background_color" : "RGBA(0.140449,0.341092,0.842697,1.000000)",
+              "class" : "SegmentedControl",
+              "name" : "sc1"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{69, 528}, {172, 33}}",
+            "class" : "Label",
+            "attributes" : {
+              "uuid" : "4D3C38AD-FF9F-4235-ADE1-550C797B22B0",
+              "font_size" : 26,
+              "corner_radius" : 15,
+              "frame" : "{{85, 434}, {150, 32}}",
+              "border_width" : 0,
+              "alignment" : "center",
+              "text_color" : "RGBA(0.003701,0.007491,0.002185,1.000000)",
+              "text" : "RESULT",
+              "font_name" : "Futura-CondensedExtraBold",
+              "class" : "Label",
+              "name" : "label9",
+              "flex" : "WHLRTB"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{31, 562}, {80, 52}}",
+            "class" : "Button",
+            "attributes" : {
+              "uuid" : "2D926202-7605-4715-BCDA-395CBE6F89C2",
+              "font_size" : 15,
+              "corner_radius" : 15,
+              "background_color" : "RGBA(0.046504,0.046504,0.279026,1.000000)",
+              "frame" : "{{120, 584}, {80, 32}}",
+              "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_width" : 2,
+              "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "custom_attributes" : "",
+              "title" : "WIN",
+              "action" : "game_result_btn_click",
+              "alpha" : 1,
+              "class" : "Button",
+              "name" : "win_game_btn",
+              "flex" : "WHLRTB"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{119, 562}, {80, 52}}",
+            "class" : "Button",
+            "attributes" : {
+              "uuid" : "84906BF1-7F20-45C6-A27D-8ED0D47C068C",
+              "font_size" : 15,
+              "corner_radius" : 15,
+              "background_color" : "RGBA(0.329588,0.068664,0.068664,1.000000)",
+              "frame" : "{{120, 584}, {80, 32}}",
+              "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_width" : 2,
+              "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "custom_attributes" : "",
+              "title" : "LOSS",
+              "action" : "game_result_btn_click",
+              "alpha" : 1,
+              "class" : "Button",
+              "name" : "lose_game_btn",
+              "flex" : "WHLRTB"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{207, 562}, {80, 52}}",
+            "class" : "Button",
+            "attributes" : {
+              "uuid" : "94B66E69-33D3-40E9-8502-0D7C78B1D227",
+              "font_size" : 15,
+              "corner_radius" : 15,
+              "background_color" : "RGBA(0.307584,0.029494,0.353933,1.000000)",
+              "frame" : "{{120, 584}, {80, 32}}",
+              "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_width" : 2,
+              "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "custom_attributes" : "",
+              "title" : "OT LOSS",
+              "action" : "game_result_btn_click",
+              "alpha" : 1,
+              "class" : "Button",
+              "name" : "ot_loss_btn",
+              "flex" : "WHLRTB"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{31, 622}, {80, 52}}",
+            "class" : "Button",
+            "attributes" : {
+              "uuid" : "739BA920-665E-4743-8014-E57A5E1BEE22",
+              "font_size" : 15,
+              "corner_radius" : 15,
+              "background_color" : "RGBA(0.307584,0.029494,0.353933,1.000000)",
+              "frame" : "{{120, 584}, {80, 32}}",
+              "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_width" : 2,
+              "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "custom_attributes" : "",
+              "title" : "FORFEIT",
+              "action" : "game_result_btn_click",
+              "alpha" : 1,
+              "class" : "Button",
+              "name" : "forfeit_btn",
+              "flex" : "WHLRTB"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{119, 622}, {80, 52}}",
+            "class" : "Button",
+            "attributes" : {
+              "uuid" : "1BD81F55-7080-4E72-958F-53CE9CE49421",
+              "font_size" : 15,
+              "corner_radius" : 15,
+              "background_color" : "RGBA(0.307584,0.029494,0.353933,1.000000)",
+              "frame" : "{{120, 584}, {80, 32}}",
+              "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_width" : 2,
+              "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "custom_attributes" : "",
+              "title" : "DCâ€™d",
+              "action" : "game_result_btn_click",
+              "alpha" : 1,
+              "class" : "Button",
+              "name" : "disconnect_btn",
+              "flex" : "WHLRTB"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{255, 412.5}, {59, 24}}",
+            "class" : "Button",
+            "attributes" : {
+              "flex" : "WHLRTB",
+              "action" : "end_editing",
+              "frame" : "{{120, 584}, {80, 32}}",
+              "tint_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "title" : "End Edit",
+              "uuid" : "A49FBEF6-833F-4635-AA19-393D320BA814",
+              "class" : "Button",
+              "name" : "end_edit_btn",
+              "font_size" : 12
+            },
+            "selected" : false
+          }
+        ],
+        "frame" : "{{0, -6}, {320, 600}}",
+        "class" : "ScrollView",
+        "attributes" : {
+          "flex" : "WHLRTB",
+          "frame" : "{{-2, 14}, {320, 320}}",
+          "uuid" : "4AE90D6A-2E9F-4421-A5ED-55439DD4BC0E",
+          "content_height" : 1200,
+          "class" : "ScrollView",
+          "content_width" : 320,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "name" : "scrollview1"
+        },
+        "selected" : true
+      }
+    ],
+    "frame" : "{{0, 0}, {316, 600}}",
+    "class" : "View",
+    "attributes" : {
+      "enabled" : true,
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "name" : "",
+      "flex" : ""
+    },
+    "selected" : false
+  }
+]
