@@ -2,6 +2,9 @@ import ui
 import drop_down_box
 import json
 import datetime
+import time
+import sound
+
 def_json_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-software~Pythonista3/Documents/rocket_league_jsons/def_json.json'
 
 stats_json_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-software~Pythonista3/Documents/rocket_league_jsons/stats_json.json'
@@ -73,6 +76,10 @@ def game_result_btn_click(sender):
 	
 	with open(stats_json_fp, "w") as f:
 		json.dump(json_dict, f, indent = 2)
+	
+	sound.play_effect("Coin_1")
+	sleep(1)
+	
 
 def end_editing(sender):
 	# minimize the keyboard once done typing.
