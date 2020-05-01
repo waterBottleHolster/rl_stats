@@ -51,27 +51,28 @@ def game_result_btn_click(sender):
 		
 	# B/c stats_json is a bunch of nested dicts there are some intermediate steps here.
 	curr_time = str(datetime.datetime.now())
+	curr_time = curr_time[:19]
 
-	json_dict[curr_time]["kickoffs"]["whiffs"] = v["scrollview1"]["whiff_count_lbl"].text
-	json_dict[curr_time]["kickoffs"]["lost"] = v["scrollview1"]["loss_count_lbl"].text
-	json_dict[curr_time]["kickoffs"]["win"] = v["scrollview1"]["win_count_lbl"].text
-
-	json_dict[curr_time]["game_type"]["mode"] = v["scrollview1"]["game_mode_ddb"].text
-	json_dict[curr_time]["game_type"]["competitive"] = str(v["scrollview1"]["competitive_switch"].value)
-	json_dict[curr_time]["game_type"]["party"] = str(tst["party_switch"].value)
-
-	json_dict[curr_time]["car_body"]["body"] = v["scrollview1"]["vehicle_ddb"].text
-	json_dict[curr_time]["car_body"]["topper"] = v["scrollview1"]["topper_switch"].value
-	json_dict[curr_time]["car_body"]["antenna"] = v["scrollview1"]["antenna_switch"].value
-
-	json_dict[curr_time]["notes"] = v["scrollview1"]["textview1"].text
-
+	# Team is special because it yields 0 or 1 and I'd rather have strings ORANGE/BLUE.
 	if v["scrollview1"]["sc1"].selected_index == 0:
-		json_dict[curr_time]["team"] = "Orange"
+		curr_team = "Orange"
 	elif v["scrollview1"]["sc1"].selected_index == 1:
-		json_dict[curr_time]["team"] = "Blue"
-
-	json_dict[curr_time]["game_result"] = sender.name
+		curr_team = "Blue
+	
+	# CATs is short for categories
+	CATs = ["kickoffs", "game_type", "car_body", "notes", "team", "game_result"]
+	
+	act_data = [
+			{"whiff" : v["scrollview1"]["whiff_count_lbl"].text, "lost" : v["scrollview1"]["loss_count_lbl"].text, "win" : v["scrollview1"]["win_count_lbl"].text},
+			{"mode" : v["scrollview1"]["game_mode_ddb"].text, "competitive" : str(v["scrollview1"]["competitive_switch"].value), "party" : str(v["scrollview1"]["party_switch"].value)},
+			{"body" : v["scrollview1"]["vehicle_ddb"].text, "topper" : v["scrollview1"]["topper_switch"].value, "antenna" : v["scrollview1"]["antenna_switch"].value},
+			{"notes" : v["scrollview1"]["textview1"].text},
+			{"team" : curr_team},
+			{"game_result" : sender.name}
+	]
+	
+	json_dict = dict(zip(CATs, act_data))
+	print(json_dict.keys())
 
 def end_editing(sender):
 	# minimize the keyboard once done typing.
