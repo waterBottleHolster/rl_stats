@@ -69,26 +69,19 @@ def game_result_btn_click(sender):
 			{"body" : vehicle_ddb.text, "topper" : v["scrollview1"]["topper_switch"].value, "antenna" : v["scrollview1"]["antenna_switch"].value},
 			{"notes" : v["scrollview1"]["textview1"].text},
 			{"team" : curr_team},
-			{"game_result" : sender.title}
+			{"game_result" : sender.title},
+			{"camera_settings" : "???"},
+			{"controller_settings" : "???"}
 	]
 	
 	json_dict[curr_time] = dict(zip(CATs, act_data))
 	
-	with open(stats_json_fp, "w") as f:
-		json.dump(json_dict, f, indent = 2)
-	
-	sound.play_effect("Beep")
-	time.sleep(1)
-	sound.play_effect("Coin_2")
-	time.sleep(1)
-	sound.play_effect("Woosh_1")
-	time.sleep(1)
+	#with open(stats_json_fp, "w") as f:
+		#json.dump(json_dict, f, indent = 2)
+
 	sound.play_effect("Woosh_2")
 	time.sleep(1)
 	
-	
-	
-
 def end_editing(sender):
 	# minimize the keyboard once done typing.
 	v["scrollview1"]["textview1"].end_editing()
