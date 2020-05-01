@@ -72,7 +72,7 @@ def game_result_btn_click(sender):
 	json_dict = dict(zip(CATs, act_data))
 	
 	with open("stats_json_fp", "w") as f:
-		json.dump(json_dict, f, indnet = 2)
+		json.dump(json_dict, f, indent = 2)
 
 def end_editing(sender):
 	# minimize the keyboard once done typing.
