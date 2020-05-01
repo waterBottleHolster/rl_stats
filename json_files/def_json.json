@@ -1,0 +1,22 @@
+{
+  "game_modes" : [
+    "Standard",
+    "Doubles",
+    "Duel",
+    "Chaos",
+    "Rumble",
+    "Snow Day",
+    "Hoops",
+    "Dropshot",
+    "Heatseeker",
+    "Spike Rush"
+  ],
+  "vehicles" : [
+    "Octane",
+    "Ronin GXT",
+    "Zippy",
+    "Merc",
+    "Chikara GXT",
+    "Scarab"
+  ]
+}
