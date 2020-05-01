@@ -66,14 +66,13 @@ def game_result_btn_click(sender):
 			{"body" : vehicle_ddb.text, "topper" : v["scrollview1"]["topper_switch"].value, "antenna" : v["scrollview1"]["antenna_switch"].value},
 			{"notes" : v["scrollview1"]["textview1"].text},
 			{"team" : curr_team},
-			{"game_result" : sender.name}
+			{"game_result" : sender.title}
 	]
 	
 	json_dict = dict(zip(CATs, act_data))
 	
-	with open("stats_json_fp", "w") as f:
+	with open(stats_json_fp, "w") as f:
 		json.dump(json_dict, f, indent = 2)
-		print("here")
 
 def end_editing(sender):
 	# minimize the keyboard once done typing.
