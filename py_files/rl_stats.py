@@ -51,28 +51,27 @@ def game_result_btn_click(sender):
 		
 	# B/c stats_json is a bunch of nested dicts there are some intermediate steps here.
 	curr_time = datetime.datetime.now()
-	
-	with v["scrollview1"] as tst:
-		json_dict[curr_time]["kickoffs"]["whiffs"] = v["scrollview1"]["whiff_count_lbl"].text
-		json_dict[curr_time]["kickoffs"]["lost"] = v["scrollview1"]["loss_count_lbl"].text
-		json_dict[curr_time]["kickoffs"]["win"] = v["scrollview1"]["win_count_lbl"].text
 
-		json_dict[curr_time]["game_type"]["mode"] = v["scrollview1"]["game_mode_ddb"].text
-		json_dict[curr_time]["game_type"]["competitive"] = str(v["scrollview1"]["competitive_switch"].value)
-		json_dict[curr_time]["game_type"]["party"] = str(tst["party_switch"].value)
-		
-		json_dict[curr_time]["car_body"]["body"] = v["scrollview1"]["vehicle_ddb"].text
-		json_dict[curr_time]["car_body"]["topper"] = v["scrollview1"]["topper_switch"].value
-		json_dict[curr_time]["car_body"]["antenna"] = v["scrollview1"]["antenna_switch"].value
+	json_dict[curr_time]["kickoffs"]["whiffs"] = v["scrollview1"]["whiff_count_lbl"].text
+	json_dict[curr_time]["kickoffs"]["lost"] = v["scrollview1"]["loss_count_lbl"].text
+	json_dict[curr_time]["kickoffs"]["win"] = v["scrollview1"]["win_count_lbl"].text
 
-		json_dict[curr_time]["notes"] = v["scrollview1"]["textview1"].text
+	json_dict[curr_time]["game_type"]["mode"] = v["scrollview1"]["game_mode_ddb"].text
+	json_dict[curr_time]["game_type"]["competitive"] = str(v["scrollview1"]["competitive_switch"].value)
+	json_dict[curr_time]["game_type"]["party"] = str(tst["party_switch"].value)
 
-		if v["scrollview1"]["sc1"].selected_index == 0:
-			json_dict[curr_time]["team"] = "Orange"
-		elif v["scrollview1"]["sc1"].selected_index == 1:
-			json_dict[curr_time]["team"] = "Blue"
+	json_dict[curr_time]["car_body"]["body"] = v["scrollview1"]["vehicle_ddb"].text
+	json_dict[curr_time]["car_body"]["topper"] = v["scrollview1"]["topper_switch"].value
+	json_dict[curr_time]["car_body"]["antenna"] = v["scrollview1"]["antenna_switch"].value
 
-		json_dict[curr_time]["game_result"] = sender.name	
+	json_dict[curr_time]["notes"] = v["scrollview1"]["textview1"].text
+
+	if v["scrollview1"]["sc1"].selected_index == 0:
+		json_dict[curr_time]["team"] = "Orange"
+	elif v["scrollview1"]["sc1"].selected_index == 1:
+		json_dict[curr_time]["team"] = "Blue"
+
+	json_dict[curr_time]["game_result"] = sender.name
 
 def end_editing(sender):
 	# minimize the keyboard once done typing.
