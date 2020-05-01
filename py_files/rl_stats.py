@@ -73,6 +73,7 @@ def game_result_btn_click(sender):
 	
 	with open("stats_json_fp", "w") as f:
 		json.dump(json_dict, f, indent = 2)
+		print("here")
 
 def end_editing(sender):
 	# minimize the keyboard once done typing.
