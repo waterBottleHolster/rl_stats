@@ -53,23 +53,23 @@ def game_result_btn_click(sender):
 	curr_time = datetime.datetime.now()
 	
 	with v["scrollview1"] as tst:
-		json_dict[curr_time]["kickoffs"]["whiffs"] = tst["whiff_count_lbl"].text
-		json_dict[curr_time]["kickoffs"]["lost"] = tst["loss_count_lbl"].text
-		json_dict[curr_time]["kickoffs"]["win"] = tst["win_count_lbl"].text
+		json_dict[curr_time]["kickoffs"]["whiffs"] = v["scrollview1"]["whiff_count_lbl"].text
+		json_dict[curr_time]["kickoffs"]["lost"] = v["scrollview1"]["loss_count_lbl"].text
+		json_dict[curr_time]["kickoffs"]["win"] = v["scrollview1"]["win_count_lbl"].text
 
-		json_dict[curr_time]["game_type"]["mode"] = tst["game_mode_ddb"].text
-		json_dict[curr_time]["game_type"]["competitive"] = str(tst["competitive_switch"].value)
+		json_dict[curr_time]["game_type"]["mode"] = v["scrollview1"]["game_mode_ddb"].text
+		json_dict[curr_time]["game_type"]["competitive"] = str(v["scrollview1"]["competitive_switch"].value)
 		json_dict[curr_time]["game_type"]["party"] = str(tst["party_switch"].value)
 		
-		json_dict[curr_time]["car_body"]["body"] = tst["vehicle_ddb"].text
-		json_dict[curr_time]["car_body"]["topper"] = tst["topper_switch"].value
-		json_dict[curr_time]["car_body"]["antenna"] = tst["antenna_switch"].value
+		json_dict[curr_time]["car_body"]["body"] = v["scrollview1"]["vehicle_ddb"].text
+		json_dict[curr_time]["car_body"]["topper"] = v["scrollview1"]["topper_switch"].value
+		json_dict[curr_time]["car_body"]["antenna"] = v["scrollview1"]["antenna_switch"].value
 
-		json_dict[curr_time]["notes"] = tst["textview1"].text
+		json_dict[curr_time]["notes"] = v["scrollview1"]["textview1"].text
 
-		if tst["sc1"].selected_index == 0:
+		if v["scrollview1"]["sc1"].selected_index == 0:
 			json_dict[curr_time]["team"] = "Orange"
-		elif tst["sc1"].selected_index == 1:
+		elif v["scrollview1"]["sc1"].selected_index == 1:
 			json_dict[curr_time]["team"] = "Blue"
 
 		json_dict[curr_time]["game_result"] = sender.name	
