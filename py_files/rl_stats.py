@@ -34,7 +34,7 @@ def ko_btn_click(sender):
 			v['scrollview1']['win_count_lbl'].text = str(cnt)
 			
 def team_select(sender):
-	print(sender.selected_index)
+
 	if sender.background_color == (0.140449, 0.341092, 0.842697, 1.0):
 		sender.background_color = (0.842697, 0.391252, 0.210674, 1.0)
 		# This means team == BLUE
@@ -42,7 +42,7 @@ def team_select(sender):
 		sender.background_color = (0.140449, 0.341092, 0.842697, 1.0)
 		
 def game_result_btn_click(sender):
-	print(sender.name)
+
 	json_dict = {}
 	with open(stats_json_fp, 'r') as f:
 		json_dict = json.load(f)
@@ -70,7 +70,9 @@ def game_result_btn_click(sender):
 	]
 	
 	json_dict = dict(zip(CATs, act_data))
-	print(json_dict.keys())
+	
+	with open("stats_json_fp", "w") as f:
+		json.dump(json_dict, f, indnet = 2)
 
 def end_editing(sender):
 	# minimize the keyboard once done typing.
