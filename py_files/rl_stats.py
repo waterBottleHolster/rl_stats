@@ -52,11 +52,11 @@ def game_result_btn_click(sender):
 	
 	json_dict[datetime.datetime.now()]["kickoffs"]["whiffs"] = v["scrollview1"]["whiff_count_lbl"].text
 	json_dict[datetime.datetime.now()]["kickoffs"]["lost"] = v["scrollview1"]["loss_count_lbl"].text
-	json_dict[datetime.datetime.now()]["kickoffs"]["win"] = v["scrollview1"].["win_count_lbl"].text
-	
+	json_dict[datetime.datetime.now()]["kickoffs"]["win"] = v["scrollview1"]["win_count_lbl"].text
+
 	json_dict[datetime.datetime.now()]["game_type"]["mode"] = v["scrollview1"]["game_mode_ddb"].text
-	json_dict[datetime.datetime.now()]["game_type"]["competitive"] = str(v["scrollview1"]["competitive_switch"].value))
-	json_dict[datetime.datetime.now()]["game_type"]["party"] = str(v["scrollview1"]["party_switch"].value))
+	json_dict[datetime.datetime.now()]["game_type"]["competitive"] = str(v["scrollview1"]["competitive_switch"].value)
+	json_dict[datetime.datetime.now()]["game_type"]["party"] = str(v["scrollview1"]["party_switch"].value
 	
 	json_dict[datetime.datetime.now()]["car_body"]["body"] = v["scrollview1"]["vehicle_ddb"].text
 	json_dict[datetime.datetime.now()]["car_body"]["topper"] = v["scrollview1"]["topper_switch"].value
