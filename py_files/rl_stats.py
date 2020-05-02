@@ -10,6 +10,7 @@ def_json_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-softw
 
 stats_json_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-software~Pythonista3/Documents/rocket_league_jsons/stats_json.json'
 
+bg_img_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-software~Pythonista3/Documents/rocket_league_pics/RL_bg_1.JPG'
 
 def ko_btn_click(sender):
 	if sender.name == 'ko_whiff_btn':
