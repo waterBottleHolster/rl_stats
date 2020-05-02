@@ -586,7 +586,7 @@
               "border_width" : 2,
               "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
               "custom_attributes" : "",
-              "title" : "DCÃ¢â‚¬â„¢d",
+              "title" : "DCd",
               "action" : "game_result_btn_click",
               "alpha" : 1,
               "class" : "Button",
