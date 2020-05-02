@@ -3,6 +3,21 @@
     "nodes" : [
       {
         "nodes" : [
+
+        ],
+        "frame" : "{{0, 0}, {320, 600}}",
+        "class" : "ImageView",
+        "attributes" : {
+          "flex" : "WHLRTB",
+          "frame" : "{{108, 250}, {100, 100}}",
+          "class" : "ImageView",
+          "name" : "iv1",
+          "uuid" : "49A7591F-0AE8-4825-8D71-FCCFEBE7B42F"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
           {
             "nodes" : [
 
@@ -571,7 +586,7 @@
               "border_width" : 2,
               "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
               "custom_attributes" : "",
-              "title" : "DCâ€™d",
+              "title" : "DCÃ¢â‚¬â„¢d",
               "action" : "game_result_btn_click",
               "alpha" : 1,
               "class" : "Button",
@@ -600,7 +615,7 @@
             "selected" : false
           }
         ],
-        "frame" : "{{0, -6}, {320, 600}}",
+        "frame" : "{{0, 0}, {320, 600}}",
         "class" : "ScrollView",
         "attributes" : {
           "flex" : "WHLRTB",
