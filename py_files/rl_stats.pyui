@@ -3,21 +3,22 @@
     "nodes" : [
       {
         "nodes" : [
+          {
+            "nodes" : [
 
-        ],
-        "frame" : "{{0, 0}, {320, 600}}",
-        "class" : "ImageView",
-        "attributes" : {
-          "flex" : "WHLRTB",
-          "frame" : "{{108, 250}, {100, 100}}",
-          "class" : "ImageView",
-          "name" : "iv1",
-          "uuid" : "49A7591F-0AE8-4825-8D71-FCCFEBE7B42F"
-        },
-        "selected" : false
-      },
-      {
-        "nodes" : [
+            ],
+            "frame" : "{{0, 0}, {320, 600}}",
+            "class" : "ImageView",
+            "attributes" : {
+              "flex" : "WHLRTB",
+              "frame" : "{{110, 550}, {100, 100}}",
+              "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "class" : "ImageView",
+              "name" : "iv1",
+              "uuid" : "A46C24E3-FE63-4AA6-A400-8B39C0F99999"
+            },
+            "selected" : true
+          },
           {
             "nodes" : [
 
@@ -58,6 +59,7 @@
               "title" : "WHIFF",
               "action" : "ko_btn_click",
               "alpha" : 1,
+              "font_name" : "Futura-CondensedExtraBold",
               "class" : "Button",
               "name" : "ko_whiff_btn",
               "flex" : "WHLRTB"
@@ -406,7 +408,7 @@
               "name" : "textview1",
               "flex" : "WH"
             },
-            "selected" : true
+            "selected" : false
           },
           {
             "nodes" : [
@@ -586,7 +588,7 @@
               "border_width" : 2,
               "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
               "custom_attributes" : "",
-              "title" : "DCd",
+              "title" : "DC",
               "action" : "game_result_btn_click",
               "alpha" : 1,
               "class" : "Button",
@@ -624,7 +626,6 @@
           "content_height" : 1200,
           "class" : "ScrollView",
           "content_width" : 320,
-          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
           "name" : "scrollview1"
         },
         "selected" : true
