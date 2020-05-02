@@ -114,7 +114,7 @@ vehicle_ddb.frame = (15, 260, 150, 45)
 vehicle_ddb.items = vehicle_list
 
 # create the background image (unsure how to do custom image in ui mode...)
-v['scrollview1']['iv1'].Image.named(bg_img_fp)
+v['scrollview1']['iv1'].image = ui.Image.named(bg_img_fp)
 v['scrollview1']['iv1'].content_mode = ui.CONTENT_SCALE_ASPECT_FILL
 
 # Change the btn fonts b/c I dont know how in the actual ui file.
