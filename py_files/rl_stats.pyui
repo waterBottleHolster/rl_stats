@@ -49,6 +49,7 @@
             "attributes" : {
               "uuid" : "FBF263CC-8EF7-4281-B69E-8ECCA00EED1A",
               "font_size" : 15,
+              "font_name" : "Futura-CondensedExtraBold"
               "corner_radius" : 15,
               "background_color" : "RGBA(0.790262,0.390427,0.230493,1.000000)",
               "frame" : "{{120, 304}, {80, 32}}",
