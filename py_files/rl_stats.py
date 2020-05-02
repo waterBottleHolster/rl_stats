@@ -116,6 +116,7 @@ vehicle_ddb.items = vehicle_list
 # create the background image (unsure how to do custom image in ui mode...)
 iv1 = ui.ImageView()
 iv1.image = ui.Image.named(bg_img_fp)
+iv1.frame = (0,0,320,600)
 iv1.content_mode = ui.CONTENT_SCALE_ASPECT_FILL
 
 
