@@ -3,7 +3,7 @@ import drop_down_box
 import json
 import datetime
 import time
-import image
+import Image
 import sound
 
 def_json_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-software~Pythonista3/Documents/rocket_league_jsons/def_json.json'
