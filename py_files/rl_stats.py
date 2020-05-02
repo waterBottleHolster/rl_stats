@@ -3,6 +3,7 @@ import drop_down_box
 import json
 import datetime
 import time
+import image
 import sound
 
 def_json_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-software~Pythonista3/Documents/rocket_league_jsons/def_json.json'
@@ -99,9 +100,10 @@ vehicle_list = []
 for item in def_json_dict["vehicles"]:
 	vehicle_list.append(item)
 	
-
+# load in the .pyui file
 v = ui.load_view()
 
+# create the comboboxes (can't be done in ui mode)
 game_mode_ddb = drop_down_box.DropdownView()
 game_mode_ddb.frame = (15, 160, 150, 45)
 game_mode_ddb.items = game_mode_list
@@ -109,6 +111,11 @@ game_mode_ddb.items = game_mode_list
 vehicle_ddb = drop_down_box.DropdownView()
 vehicle_ddb.frame = (15, 260, 150, 45)
 vehicle_ddb.items = vehicle_list
+
+# create the background image (unsure how to do custom image in ui mode...)
+iv1 = ui.ImageView()
+iv1.image = ui.Image.named(bg_img_fp)
+iv1.content_mode = ui.CONTENT_MODE_ASPECT_FILL
 
 
 # Change the btn fonts b/c I dont know how in the actual ui file.
@@ -118,5 +125,6 @@ v['scrollview1']['ko_win_btn'].font = ('Futura-CondensedExtraBold', 18)
 
 v['scrollview1'].add_subview(game_mode_ddb)
 v['scrollview1'].add_subview(vehicle_ddb)
+v['scrollview1'].add_subview(iv1)
 
 v.present('fullscreen')
