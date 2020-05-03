@@ -601,7 +601,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{255, 412.5}, {59, 24}}",
+            "frame" : "{{255, 405}, {59, 24}}",
             "class" : "Button",
             "attributes" : {
               "flex" : "WHLRTB",
