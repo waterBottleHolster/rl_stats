@@ -1,0 +1,41 @@
+{
+  "kbm1" : {
+    "Input Device" : "Keyboard",
+    "Steering Sens." : "",
+    "Aerial Sens." : "",
+    "Controller Deadzone" : "",
+    "Dodge Deadzone" : "",
+    "Controller Vibration" : "",
+    "Vibration Intensity" : "",
+    "Ball Cam. Mode" : "Toggle",
+    "Push to Talk" : true,
+    "Mouse Sens." : "10.00",
+    "KB Input Accel." : "0.00"
+  },
+  "kbm2" : {
+    "Input Device" : "Keyboard",
+    "Steering Sens." : "",
+    "Aerial Sens." : "",
+    "Controller Deadzone" : "",
+    "Dodge Deadzone" : "",
+    "Controller Vibration" : "",
+    "Vibration Intensity" : "",
+    "Ball Cam. Mode" : "Toggle",
+    "Push to Talk" : true,
+    "Mouse Sens." : "10.00",
+    "KB Input Accel." : "0.00"
+  },
+  "controller1" : {
+    "Input Device" : "Controller",
+    "Steering Sens." : "4.91",
+    "Aerial Sens." : "5.20",
+    "Controller Deadzone" : "0.40",
+    "Dodge Deadzone" : "0.73",
+    "Controller Vibration" : "Disabled",
+    "Vibration Intensity" : "0.00",
+    "Ball Cam. Mode" : "Toggle",
+    "Push to Talk" : true,
+    "Mouse Sens." : "",
+    "KB Input Accel." : ""
+  }
+}
