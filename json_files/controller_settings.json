@@ -1,5 +1,5 @@
 {
-  "kbm1" : {
+  "KBM1" : {
     "Input Device" : "Keyboard",
     "Steering Sens." : "",
     "Aerial Sens." : "",
@@ -12,7 +12,7 @@
     "Mouse Sens." : "10.00",
     "KB Input Accel." : "0.00"
   },
-  "kbm2" : {
+  "KBM2" : {
     "Input Device" : "Keyboard",
     "Steering Sens." : "",
     "Aerial Sens." : "",
