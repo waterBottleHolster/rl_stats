@@ -142,5 +142,6 @@ v['scrollview1']['ko_win_btn'].font = ('Futura-CondensedExtraBold', 18)
 
 v['scrollview1'].add_subview(game_mode_ddb)
 v['scrollview1'].add_subview(vehicle_ddb)
-
+v['scrollview1'].add_subview(camera_ddb)
+v['scrollview1'].add_subview(controller_ddb)
 v.present('fullscreen')
