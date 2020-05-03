@@ -16,6 +16,31 @@ camera_json_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-so
 
 bg_img_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-software~Pythonista3/Documents/rocket_league_pics/RL_bg_1.JPG'
 
+
+class homeScreen(ui.View):
+	def __init__(self, *args, **kwargs):
+		# Note this gets called before the UI file has fully loaded.
+		self.present('sheet')
+		
+	def did_load(self):
+		# This gets called once the UI file has fully loaded.
+		pass
+	
+	def will_close(self):
+		# This gets called when the currently presented view is about to be dismissed.  It makes for a good place to save data...
+		pass
+
+	def layout(self):
+        	# This will be called when a view is resized. You should typically set the
+        	# frames of the view's subviews here, if your layout requirements cannot
+        	# be fulfilled with the standard auto-resizing (flex) attribute.
+        	pass
+
+if __name__ == "__main__":
+	view = ui.load_view()
+	
+	
+
 def ko_btn_click(sender):
 	if sender.name == 'ko_whiff_btn':
 		# increment whiff total by 1
