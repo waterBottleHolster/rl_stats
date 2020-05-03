@@ -1,0 +1,35 @@
+{
+  "profile1" : {
+    "Camera Shake" : false,
+    "Field of View" : "110",
+    "Distance" : "250",
+    "Height" : "110",
+    "Angle" : "-4.00",
+    "Stiffness" : "0.00",
+    "Swivel Speed" : "5.60",
+    "Transition Speed" : 1.00,
+    "Invert Swivel" : true
+  },
+  "profile2" : {
+    "Camera Shake" : false,
+    "Field of View" : "110",
+    "Distance" : "250",
+    "Height" : "110",
+    "Angle" : "-4.00",
+    "Stiffness" : "0.00",
+    "Swivel Speed" : "5.60",
+    "Transition Speed" : 1.00,
+    "Invert Swivel" : true
+  },
+  "profile3" : {
+    "Camera Shake" : false,
+    "Field of View" : "110",
+    "Distance" : "250",
+    "Height" : "110",
+    "Angle" : "-4.00",
+    "Stiffness" : "0.00",
+    "Swivel Speed" : "5.60",
+    "Transition Speed" : 1.00,
+    "Invert Swivel" : true
+  }
+}
