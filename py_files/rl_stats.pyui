@@ -655,6 +655,7 @@
               "class" : "Label",
               "alignment" : "right",
               "text" : "CAMERA:",
+              "font_name" : "Futura-CondensedExtraBold",
               "name" : "label10",
               "font_name" : "<System>"
             },
@@ -674,6 +675,7 @@
               "class" : "Label",
               "alignment" : "right",
               "text" : "CONTROLLER:",
+              "font_name" : "Futura-CondensedExtraBold",
               "name" : "label11",
               "font_name" : "<System>"
             },
