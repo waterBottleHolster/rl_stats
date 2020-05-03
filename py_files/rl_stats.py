@@ -124,11 +124,11 @@ vehicle_ddb.frame = (15, 260, 150, 45)
 vehicle_ddb.items = vehicle_list
 
 camera_ddb = drop_down_box.DropdownView()
-camera_ddb.frame = (60, 560, 150, 45)
+camera_ddb.frame = (200, 560, 150, 45)
 camera_ddb.items = camera_list
 
 controller_ddb = drop_down_box.DropdownView()
-controller_ddb.frame = (60, 590, 150, 45)
+controller_ddb.frame = (200, 650, 150, 45)
 controller_ddb.items = controller_list
 
 # create the background image (unsure how to do custom image in ui mode...)
