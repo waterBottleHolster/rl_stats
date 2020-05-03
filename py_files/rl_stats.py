@@ -100,6 +100,12 @@ for item in def_json_dict["game_modes"]:
 vehicle_list = []
 for item in def_json_dict["vehicles"]:
 	vehicle_list.append(item)
+camera_list = []
+for item in def_json_dict["camera_settings"]:
+	camera_list.append(item)
+controller_list = []
+for item in def_json_dict["controller_settings"]:
+	controller_list.append(item)
 	
 # load in the .pyui file
 v = ui.load_view()
@@ -112,6 +118,14 @@ game_mode_ddb.items = game_mode_list
 vehicle_ddb = drop_down_box.DropdownView()
 vehicle_ddb.frame = (15, 260, 150, 45)
 vehicle_ddb.items = vehicle_list
+
+camera_ddb = drop_down_box.DropdownView()
+camera_ddb.frame = (60, 560, 150, 45)
+camera_ddb.items = camera_list
+
+controller_ddb = drop_down_box.DropdownView()
+controller_ddb.frame = (60, 590, 150, 45)
+controller_ddb.items = controller_list
 
 # create the background image (unsure how to do custom image in ui mode...)
 v['scrollview1']['iv1'].image = ui.Image.named(bg_img_fp)
