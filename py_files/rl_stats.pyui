@@ -612,7 +612,7 @@
               "uuid" : "A49FBEF6-833F-4635-AA19-393D320BA814",
               "class" : "Button",
               "name" : "end_edit_btn",
-              "font_size" : 12
+              "font_size" : 10
             },
             "selected" : false
           },
