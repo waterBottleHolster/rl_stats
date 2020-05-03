@@ -605,7 +605,7 @@
             "class" : "Button",
             "attributes" : {
               "flex" : "WHLRTB",
-              "action" : "end_editing",
+              "action" : "",
               "frame" : "{{120, 584}, {80, 32}}",
               "tint_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
               "title" : "End Edit",
