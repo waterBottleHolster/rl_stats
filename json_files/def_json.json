@@ -18,5 +18,15 @@
     "Merc",
     "Chikara GXT",
     "Scarab"
+  ],
+  "camera_settings" : [
+    "profile1",
+    "profile2",
+    "profile3"
+  ],
+  "controller_settings" : [
+    "KBM1",
+    "KBM2",
+    "controller1"
   ]
 }
