@@ -10,6 +10,10 @@ def_json_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-softw
 
 stats_json_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-software~Pythonista3/Documents/rocket_league_jsons/stats_json.json'
 
+controller_json_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-software~Pythonista3/Documents/rocket_league_jsons/controller_settings.json'
+
+camera_json_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-software~Pythonista3/Documents/rocket_league_jsons/camera_settings.json'
+
 bg_img_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-software~Pythonista3/Documents/rocket_league_pics/RL_bg_1.JPG'
 
 def ko_btn_click(sender):
@@ -63,17 +67,17 @@ def game_result_btn_click(sender):
 		curr_team = "Blue"
 	
 	# CATs is short for categories
-	CATs = ["kickoffs", "game_type", "car_body", "notes", "team", "game_result"]
+	CATs = ["kickoffs", "game_type", "car_body", "notes", "team", "game_result", "camera_settings", "controller_settings"]
 	
 	act_data = [
 			{"whiff" : v["scrollview1"]["whiff_count_lbl"].text, "lost" : v["scrollview1"]["loss_count_lbl"].text, "win" : v["scrollview1"]["win_count_lbl"].text},
 			{"mode" : game_mode_ddb.text, "competitive" : str(v["scrollview1"]["competitive_switch"].value), "party" : str(v["scrollview1"]["party_switch"].value)},
 			{"body" : vehicle_ddb.text, "topper" : v["scrollview1"]["topper_switch"].value, "antenna" : v["scrollview1"]["antenna_switch"].value},
 			{"notes" : v["scrollview1"]["textview1"].text},
-			{"team" : curr_team},
-			{"game_result" : sender.title},
-			{"camera_settings" : "???"},
-			{"controller_settings" : "???"}
+			curr_team,
+			sender.title,
+			camera_ddb.text,
+			controller_ddb.text
 	]
 	
 	json_dict[curr_time] = dict(zip(CATs, act_data))
