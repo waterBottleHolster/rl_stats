@@ -7,7 +7,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{0, 0}, {320, 857}}",
+            "frame" : "{{0, 0}, {320, 900}}",
             "class" : "ImageView",
             "attributes" : {
               "flex" : "WHLRTB",
@@ -17,7 +17,7 @@
               "name" : "iv1",
               "uuid" : "A46C24E3-FE63-4AA6-A400-8B39C0F99999"
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -57,7 +57,7 @@
               "border_width" : 0,
               "custom_attributes" : "",
               "title" : "WHIFF",
-              "action" : "ko_btn_click",
+              "action" : "",
               "alpha" : 1,
               "font_name" : "Futura-CondensedExtraBold",
               "class" : "Button",
@@ -81,7 +81,7 @@
               "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
               "border_width" : 0,
               "title" : "LOSS",
-              "action" : "ko_btn_click",
+              "action" : "",
               "class" : "Button",
               "name" : "ko_loss_btn",
               "flex" : "WHLRTB"
@@ -103,7 +103,7 @@
               "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
               "border_width" : 0,
               "title" : "WIN",
-              "action" : "ko_btn_click",
+              "action" : "",
               "class" : "Button",
               "name" : "ko_win_btn",
               "flex" : "WHLRTB"
@@ -114,7 +114,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{69, 121}, {172, 33}}",
+            "frame" : "{{136, 121}, {172, 33}}",
             "class" : "Label",
             "attributes" : {
               "uuid" : "F386E86C-AE68-4312-ACDA-C6BC453ABAE3",
@@ -263,13 +263,13 @@
             "class" : "Label",
             "attributes" : {
               "flex" : "WHLRTB",
-              "font_size" : 18,
+              "name" : "label3",
               "frame" : "{{85, 284}, {150, 32}}",
               "uuid" : "006F6610-992C-4C8D-B04B-79E99F923267",
               "class" : "Label",
               "alignment" : "left",
               "text" : "Partied Up?",
-              "name" : "label3",
+              "font_size" : 18,
               "font_name" : "<System>"
             },
             "selected" : false
@@ -336,13 +336,13 @@
             "class" : "Label",
             "attributes" : {
               "flex" : "WHLRTB",
-              "name" : "label5",
+              "font_size" : 18,
               "frame" : "{{85, 284}, {150, 32}}",
               "uuid" : "AEC21452-4130-49E8-AE7A-47C1E9253576",
               "class" : "Label",
               "alignment" : "left",
               "text" : "Topper?",
-              "font_size" : 18,
+              "name" : "label5",
               "font_name" : "<System>"
             },
             "selected" : false
@@ -355,13 +355,13 @@
             "class" : "Label",
             "attributes" : {
               "flex" : "WHLRTB",
-              "name" : "label6",
+              "font_size" : 18,
               "frame" : "{{85, 284}, {150, 32}}",
               "uuid" : "CF03F0E3-3898-4F0E-A75A-A10B41E7CD1D",
               "class" : "Label",
               "alignment" : "left",
               "text" : "Antenna?",
-              "font_size" : 18,
+              "name" : "label6",
               "font_name" : "<System>"
             },
             "selected" : false
@@ -440,7 +440,7 @@
             "class" : "SegmentedControl",
             "attributes" : {
               "flex" : "WHLRTB",
-              "action" : "team_select",
+              "action" : "",
               "segments" : "BLUE|ORANGE",
               "frame" : "{{100, 436}, {120, 29}}",
               "uuid" : "61744A5A-F4E5-4F82-AA48-C953695E2F62",
@@ -489,7 +489,7 @@
               "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
               "custom_attributes" : "",
               "title" : "WIN",
-              "action" : "game_result_btn_click",
+              "action" : "",
               "alpha" : 1,
               "class" : "Button",
               "name" : "win_game_btn",
@@ -514,7 +514,7 @@
               "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
               "custom_attributes" : "",
               "title" : "LOSS",
-              "action" : "game_result_btn_click",
+              "action" : "",
               "alpha" : 1,
               "class" : "Button",
               "name" : "lose_game_btn",
@@ -539,7 +539,7 @@
               "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
               "custom_attributes" : "",
               "title" : "OT LOSS",
-              "action" : "game_result_btn_click",
+              "action" : "",
               "alpha" : 1,
               "class" : "Button",
               "name" : "ot_loss_btn",
@@ -564,7 +564,7 @@
               "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
               "custom_attributes" : "",
               "title" : "FORFEIT",
-              "action" : "game_result_btn_click",
+              "action" : "",
               "alpha" : 1,
               "class" : "Button",
               "name" : "forfeit_btn",
@@ -589,7 +589,7 @@
               "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
               "custom_attributes" : "",
               "title" : "DC",
-              "action" : "game_result_btn_click",
+              "action" : "",
               "alpha" : 1,
               "class" : "Button",
               "name" : "disconnect_btn",
@@ -615,6 +615,69 @@
               "font_size" : 12
             },
             "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{59, 836}, {192, 49}}",
+            "class" : "Button",
+            "attributes" : {
+              "uuid" : "14DA436C-7F5D-4919-B592-51D2058121C6",
+              "font_size" : 20,
+              "corner_radius" : 15,
+              "background_color" : "RGBA(0.046504,0.046504,0.279026,1.000000)",
+              "frame" : "{{120, 434}, {80, 32}}",
+              "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "border_width" : 2,
+              "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+              "custom_attributes" : "",
+              "title" : "ANALYZE",
+              "action" : "",
+              "alpha" : 1,
+              "class" : "Button",
+              "name" : "analyze_btn",
+              "flex" : "WHLRTB"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{13, 682}, {150, 32}}",
+            "class" : "Label",
+            "attributes" : {
+              "flex" : "WHLRTB",
+              "font_size" : 18,
+              "frame" : "{{85, 434}, {150, 32}}",
+              "uuid" : "B2A064F2-DBCB-458C-9100-E92DF12E01A0",
+              "class" : "Label",
+              "alignment" : "right",
+              "text" : "CAMERA:",
+              "name" : "label10",
+              "font_name" : "<System>"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{13, 722}, {150, 32}}",
+            "class" : "Label",
+            "attributes" : {
+              "flex" : "WHLRTB",
+              "font_size" : 18,
+              "frame" : "{{85, 434}, {150, 32}}",
+              "uuid" : "8FA1FEA9-066F-441E-B134-25EB685CD706",
+              "class" : "Label",
+              "alignment" : "right",
+              "text" : "CONTROLLER:",
+              "name" : "label11",
+              "font_name" : "<System>"
+            },
+            "selected" : false
           }
         ],
         "frame" : "{{0, 0}, {320, 600}}",
@@ -628,7 +691,7 @@
           "content_width" : 320,
           "name" : "scrollview1"
         },
-        "selected" : false
+        "selected" : true
       }
     ],
     "frame" : "{{0, 0}, {316, 600}}",
