@@ -24,6 +24,11 @@ class homeScreen(ui.View):
 		
 	def did_load(self):
 		# This gets called once the UI file has fully loaded.
+		# Four things happen: 
+		#    - all the UI's drop down boxes are made.
+		#    - background image gets added.
+		#    - button fonts get changed to something more Rocket League-y.
+		#    - lastly the function that assigns actions to each of the btns is called.
 		
 		# I can't add dropdownviews with the UI editor, so do it here.
 		# Step 1: obtain the lists that'll populate the ddb's from def_json.json
@@ -60,7 +65,7 @@ class homeScreen(ui.View):
 		self.controller_ddb = drop_down_box.DropdownView()
 		self.controller_ddb.frame = (200, 650, 150, 45)
 		self.controller_ddb.items = self.controller_list
-		
+
 		# Add each of the ddb's as subviews.
 		self['scrollview1'].add_subview(game_mode_ddb)
 		self['scrollview1'].add_subview(vehicle_ddb)
