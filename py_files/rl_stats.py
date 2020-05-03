@@ -42,10 +42,10 @@ class homeScreen(ui.View):
 		self.vehicle_list = []
 		for item in self.def_json_dict["vehicles"]:
 			self.vehicle_list.append(item)
-		camera_list = []
+		self.camera_list = []
 		for item in self.def_json_dict["camera_settings"]:
 			self.camera_list.append(item)
-		controller_list = []
+		self.controller_list = []
 		for item in self.def_json_dict["controller_settings"]:
 			self.controller_list.append(item)
 			
@@ -67,10 +67,10 @@ class homeScreen(ui.View):
 		self.controller_ddb.items = self.controller_list
 
 		# Add each of the ddb's as subviews.
-		self['scrollview1'].add_subview(game_mode_ddb)
-		self['scrollview1'].add_subview(vehicle_ddb)
-		self['scrollview1'].add_subview(camera_ddb)
-		self['scrollview1'].add_subview(controller_ddb)
+		self['scrollview1'].add_subview(self.game_mode_ddb)
+		self['scrollview1'].add_subview(self.vehicle_ddb)
+		self['scrollview1'].add_subview(self.camera_ddb)
+		self['scrollview1'].add_subview(self.controller_ddb)
 		
 		# The background image also gets done here.
 		# create the background image (unsure how to do custom image in ui mode...)
