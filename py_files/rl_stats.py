@@ -20,7 +20,7 @@ bg_img_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-softwar
 class homeScreen(ui.View):
 	def __init__(self, *args, **kwargs):
 		# Note this gets called before the UI file has fully loaded.
-		self.present('sheet')
+		self.present('sheet', hide_title_bar = True)
 		
 	def did_load(self):
 		# This gets called once the UI file has fully loaded.
