@@ -682,11 +682,11 @@
             "selected" : false
           }
         ],
-        "frame" : "{{0, 0}, {320, 600}}",
+        "frame" : "{{0, 0}, {375, 600}}",
         "class" : "ScrollView",
         "attributes" : {
           "flex" : "WHLRTB",
-          "frame" : "{{-2, 14}, {320, 320}}",
+          "frame" : "{{0, 0}, {375, 320}}",
           "uuid" : "4AE90D6A-2E9F-4421-A5ED-55439DD4BC0E",
           "content_height" : 900,
           "class" : "ScrollView",
@@ -696,7 +696,7 @@
         "selected" : true
       }
     ],
-    "frame" : "{{0, 0}, {316, 600}}",
+    "frame" : "{{0, 0}, {375, 600}}",
     "class" : "View",
     "attributes" : {
       "enabled" : true,
