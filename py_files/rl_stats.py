@@ -5,6 +5,7 @@ import datetime
 import time
 import Image
 import sound
+import analyze_mode
 
 def_json_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-software~Pythonista3/Documents/rocket_league_jsons/def_json.json'
 
