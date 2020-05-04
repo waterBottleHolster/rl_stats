@@ -3,8 +3,7 @@ import ui
 import rl_stats
 import json
 
-def_json_fp = ""
-
+def_json_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-software~Pythonista3/Documents/rocket_league_jsons/def_json.json'
 
 bd = 2
 xl_lbl_font = ("Futura-CondensedExtraBold", 30)
@@ -17,8 +16,8 @@ class cameraControlsScreen(ui.View):
     self.banner2_lbl = ui.Label(self, text = "CAMERA SETTINGS", font = xl_lbl_font, ui.ALIGN_CENTER, border_width = bd)
 
     # The save and back btns are also not reliant on the json.
-    self.save_btn = ui.Button(self, title = "SAVE", font = xl_lbl_font, border_widget = bd, background_color = "")
-    self.back_btn = ui.Button(self, title = "BACK", font = xl_lbl_font, border_widget = bd, background_color = "")
+    self.save_btn = ui.Button(self, title = "SAVE", font = xl_lbl_font, border_width = bd, background_color = "")
+    self.back_btn = ui.Button(self, title = "BACK", font = xl_lbl_font, border_width = bd, background_color = "")
 
     self.banner1_lbl.frame = (0, 0, 320, 32)
     self.banner1_lbl.frame = (0, 248, 320, 32)
@@ -26,14 +25,32 @@ class cameraControlsScreen(ui.View):
     self.back_btn.frame = (160, 568, 160, 32)
     
     # Now to create the bulk of the labels, look to the def_json.json file.
+    # def_json_dict has the json file's info while widget_dict contains the created widgets.d
+    # Do all the camera-related widgets, then move onto the controller-related widgets.
     with open(def_json_fp, 'r') as f:
       self.def_json_dict = json.load(f)
+
+    self.widget_dict = {}
+    x = 0; y = 40; width = 160, height = 20
+
+    for key in self.def_json_dict["camera_settings"]:
+      # do LHS first
+      self.hdr_lbl = ui.Label(self, text = key, font = sm_lbl_font, ui.ALIGN_RIGHT, border_width = bd)
+      self.hdr_lbl.frame = (x, y, width, height)
+      self.widget_dict[key] = self.hdr_lbl
       
-    
-    
+      # now do RHS second
+      if self.def_json_dict["camera_settings"][key] == "textfield":
+        self.subv = ui.View(self)
+        self.subv.frame = (x + width, y)
+      elif self.def_json_dict["camera_settings"][key] == "checkbox":
+        pass
+      y = y + height
     
     self.add_subview(self.banner1_lbl)
     self.add_subview(self.banner2_lbl)
+    for item in self.widget_dict:
+      self.add_subview(self.widget_dict[item])
     
 
 if __name__ == "__main__":
