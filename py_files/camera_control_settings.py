@@ -1,6 +1,7 @@
 import ui
 import rl_stats
 import json
+import drop_down_box
 from objc_util import *
 
 def_json_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-software~Pythonista3/Documents/json_files/def_json.json'
@@ -75,6 +76,18 @@ class cameraControlsScreen(ui.View):
     self.add_subview(self.banner2_lbl)
     for item in self.widget_dict:
       self.add_subview(self.widget_dict[item])
+      
+    # For the control section I want them grouped under a view, except for input_device_dropdown.
+    self.input_hdr_lbl = ui.Label(self, text = "Input Device:", font = sm_lbl_font, alignment = ui.ALIGN_RIGHT, border_width = bd)
+    self.input_hdr_lbl.frame(0, 280, 187.5, 20)
+    self.input_ddb = drop_down_box.DropdownView()
+    self.input_ddb.items = ['Keyboard', 'Controller']
+    self.input_ddb.frame = (187.5, 280, 187.5, 20)
+    # Depending on which input is selected a different view will appear.
+    self.kbm_box = ui.View(self)
+    self.controller_box = ui.View(self)
+    
+    
     
 
 if __name__ == "__main__":
