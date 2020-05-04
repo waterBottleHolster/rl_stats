@@ -30,11 +30,11 @@ class cameraControlsScreen(ui.View):
       self.def_json_dict = json.load(f)
 
     self.widget_dict = {}
-    x = 0; y = 40; width = 160, height = 20
+    x = 0; y = 40; width = 160; height = 20
 
     for key in self.def_json_dict["camera_settings"]:
       # do LHS first
-      self.hdr_lbl = ui.Label(self, text = key, font = sm_lbl_font, ui.ALIGN_RIGHT, border_width = bd)
+      self.hdr_lbl = ui.Label(self, text = key, font = sm_lbl_font, alignment = ui.ALIGN_RIGHT, border_width = bd)
       self.hdr_lbl.frame = (x, y, width, height)
       self.widget_dict[key] = self.hdr_lbl
       
