@@ -205,6 +205,7 @@ class homeScreen(ui.View):
 	def end_editing(self, sender):
 		# minimize the keyboard once done typing.
 		self["scrollview1"]["textview1"].end_editing()
+		self["scrollview1"][self.camera_ddb].end_editing()
 
 if __name__ == "__main__":
 	view = ui.load_view()
