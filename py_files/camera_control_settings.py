@@ -2,7 +2,7 @@ import ui
 import rl_stats
 import json
 
-def_json_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-software~Pythonista3/Documents/rocket_league_jsons/def_json.json'
+def_json_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-software~Pythonista3/Documents/json_files/def_json.json'
 
 bd = 2
 xl_lbl_font = ("Futura-CondensedExtraBold", 30)
