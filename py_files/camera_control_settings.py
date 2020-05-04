@@ -21,7 +21,7 @@ class cameraControlsScreen(ui.View):
     self.back_btn = ui.Button(self, title = "BACK", font = xl_lbl_font, border_width = bd, background_color = "")
 
     self.banner1_lbl.frame = (0, 20, 375, 32)
-    self.banner2_lbl.frame = (0, 248, 375, 32)
+    self.banner2_lbl.frame = (0, 268, 375, 32)
     self.save_btn.frame = (0, 568, 160, 32)
     self.back_btn.frame = (160, 568, 160, 32)
     
