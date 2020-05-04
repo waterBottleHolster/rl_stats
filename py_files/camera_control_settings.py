@@ -42,8 +42,8 @@ class cameraControlsScreen(ui.View):
       if self.def_json_dict["camera_settings"][key] == "textfield":
         #self.subv = ui.View(self)
         #self.subv.frame = (x + width, y, width, height)
-        self.tf.frame = (x + width, y, width, height)
         self.tf = ui.TextField(self)
+        self.tf.frame = (x + width, y, width, height)
         self.tf.tint_color = 'white'
         self.tf.text_color = 'white'
         self.tf.border_width = 2
