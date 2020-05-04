@@ -1,4 +1,3 @@
-# no associated .pyui file b/c one was never needed.
 import ui
 import rl_stats
 import json
