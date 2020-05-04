@@ -40,10 +40,24 @@ class cameraControlsScreen(ui.View):
       
       # now do RHS second
       if self.def_json_dict["camera_settings"][key] == "textfield":
-        self.subv = ui.View(self)
-        self.subv.frame = (x + width, y)
+        #self.subv = ui.View(self)
+        #self.subv.frame = (x + width, y, width, height)
+        self.tf.frame = (x + width, y, width, height)
+        self.tf = ui.TextField(self)
+        self.tf.tint_color = 'white'
+        self.tf.text_color = 'white'
+        self.tf.border_width = 2
+        self.tf.border_color = 'black'
+        #self.subv.add_subview(self.tf)
+        
+        self.tfo = ObjCInstance(self.tf).textField()
+        self.tfo.backgroundColor = ObjCClass('UIColor').colorWithRed_green_blue_alpha_(0, 0, 0, 0)
+        
+        self.widget_dict[key+"_txt"] = self.tf
+        
       elif self.def_json_dict["camera_settings"][key] == "checkbox":
         pass
+      
       y = y + height
     
     self.add_subview(self.banner1_lbl)
