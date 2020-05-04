@@ -201,7 +201,7 @@ class homeScreen(ui.View):
 		else:
 			sender.background_color = (0.140449, 0.341092, 0.842697, 1.0)
 			
-	def end_editing(sender):
+	def end_editing(self, sender):
 		# minimize the keyboard once done typing.
 		self["scrollview1"]["textview1"].end_editing()
 
