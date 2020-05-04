@@ -11,7 +11,7 @@ sm_lbl_font = ("Futura-CondensedExtraBold", 18)
 
 class cameraControlsScreen(ui.View):
   def __init__(self, *args, **kwargs):
-    self.frame = (0, 0, 320, 600)
+    self.frame = (0, 0, 375, 600)
     # The big banner labels aren't created from the json so do them first.
     self.banner1_lbl = ui.Label(self, text = "CAMERA SETTINGS", font = xl_lbl_font, alignment = ui.ALIGN_CENTER, border_width = bd)
     self.banner2_lbl = ui.Label(self, text = "CONTROLLER SETTINGS", font = xl_lbl_font, alignment = ui.ALIGN_CENTER, border_width = bd)
@@ -20,8 +20,8 @@ class cameraControlsScreen(ui.View):
     self.save_btn = ui.Button(self, title = "SAVE", font = xl_lbl_font, border_width = bd, background_color = "")
     self.back_btn = ui.Button(self, title = "BACK", font = xl_lbl_font, border_width = bd, background_color = "")
 
-    self.banner1_lbl.frame = (0, 0, 320, 32)
-    self.banner2_lbl.frame = (0, 248, 320, 32)
+    self.banner1_lbl.frame = (0, 0, 375, 32)
+    self.banner2_lbl.frame = (0, 248, 375, 32)
     self.save_btn.frame = (0, 568, 160, 32)
     self.back_btn.frame = (160, 568, 160, 32)
     
@@ -32,7 +32,7 @@ class cameraControlsScreen(ui.View):
       self.def_json_dict = json.load(f)
 
     self.widget_dict = {}
-    x = 0; y = 40; width = 160; height = 20
+    x = 0; y = 40; width = 187.5; height = 20
 
     for key in self.def_json_dict["camera_settings"]:
       # do LHS first
