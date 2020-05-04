@@ -192,6 +192,7 @@ class homeScreen(ui.View):
 		# Navigate to the analyze_screen
 		self.close()
 		self.wait_modal()
+		analyzeScreen = analyze_mode.analyzeScreen
 		v = ui.load_view("analyze_mode.pyui")
 	
 	def team_select(self, sender):
