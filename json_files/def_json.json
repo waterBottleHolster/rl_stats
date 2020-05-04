@@ -17,16 +17,30 @@
     "Zippy",
     "Merc",
     "Chikara GXT",
-    "Scarab"
+    "Scarab",
+    "Venom"
   ],
-  "camera_settings" : [
-    "profile1",
-    "profile2",
-    "profile3"
-  ],
-  "controller_settings" : [
-    "KBM1",
-    "KBM2",
-    "controller1"
-  ]
+  "camera_settings" : {
+    "Name:" : "textfield",
+    "Camera Shake:" : "checkbox",
+    "Field of View:" : "textfield",
+    "Distance:" : "textfield",
+    "Height:" : "textfield",
+    "Angle:" : "textfield",
+    "Stiffness:" : "textfield",
+    "Swivel Speed:" : "textfield",
+    "Transition Speed" : "textfield",
+    "Invert Swivel" : "checkbox"
+  },
+  "controller_settings" : {
+    "Name:" : "textfield",
+    "Input Device:" : "combobox",
+    "Steering Sens.:" : "textfield",
+    "Aerial Sens.:" : "textfield",
+    "Controller Deadzone:" : "textfield",
+    "Dodge Deadzone:" : "textfield",
+    "Controller Vibration" : "combobox",
+    "Vibration Intensity" : "textfield",
+    "Ball Cam. Mode:" : "combobox"
+  }
 }
