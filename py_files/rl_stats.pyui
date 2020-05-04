@@ -149,7 +149,7 @@
               "alignment" : "center",
               "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
               "text" : "",
-              "font_name" : "<System>",
+              "font_name" : "Futura-CondensedExtraBold",
               "class" : "Label",
               "name" : "whiff_count_lbl",
               "flex" : "WHLRTB"
@@ -171,7 +171,7 @@
               "alignment" : "center",
               "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
               "text" : "",
-              "font_name" : "<System>",
+              "font_name" : "Futura-CondensedExtraBold",
               "class" : "Label",
               "name" : "win_count_lbl",
               "flex" : "WHLRTB"
@@ -195,7 +195,7 @@
               "alignment" : "center",
               "text" : "",
               "text_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
-              "font_name" : "<System>",
+              "font_name" : "Futura-CondensedExtraBold",
               "class" : "Label",
               "name" : "loss_count_lbl",
               "flex" : "WHLRTB"
