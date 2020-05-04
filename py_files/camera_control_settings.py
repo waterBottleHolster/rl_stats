@@ -4,6 +4,7 @@ import json
 from objc_util import *
 
 def_json_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-software~Pythonista3/Documents/json_files/def_json.json'
+bg_img_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-software~Pythonista3/Documents/rocket_league_pics/gtl_2.png'
 
 bd = 0
 xl_lbl_font = ("Futura-CondensedExtraBold", 30)
@@ -12,6 +13,11 @@ sm_lbl_font = ("Futura-CondensedExtraBold", 18)
 class cameraControlsScreen(ui.View):
   def __init__(self, *args, **kwargs):
 
+    # Make a nice background image.
+    self.iv1 = ui.ImageView(self)
+    self.iv1.image = ui.Image.named(bg_img_fp)
+    self.iv1.content_mode = ui.CONTENT_SCALE_ASPECT_FILL
+    
     # The big banner labels aren't created from the json so do them first.
     self.banner1_lbl = ui.Label(self, text = "CAMERA SETTINGS", font = xl_lbl_font, alignment = ui.ALIGN_CENTER, border_width = bd)
     self.banner2_lbl = ui.Label(self, text = "CONTROLLER SETTINGS", font = xl_lbl_font, alignment = ui.ALIGN_CENTER, border_width = bd)
@@ -65,6 +71,7 @@ class cameraControlsScreen(ui.View):
 
       y = y + height
     
+    self.add_subview(self.iv1)
     self.add_subview(self.banner1_lbl)
     self.add_subview(self.banner2_lbl)
     for item in self.widget_dict:
