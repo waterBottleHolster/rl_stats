@@ -67,5 +67,5 @@ class cameraControlsScreen(ui.View):
     
 
 if __name__ == "__main__":
-  view = cameraControlsScreen
+  view = cameraControlsScreen()
   view.present("fullscreen", hide_title_bar = True)
