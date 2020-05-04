@@ -11,8 +11,8 @@ sm_lbl_font = ("Futura-CondensedExtraBold", 18)
 class cameraControlsScreen(ui.View):
   def __init__(self, *args, **kwargs):
     # The big banner labels aren't created from the json so do them first.
-    self.banner1_lbl = ui.Label(self, text = "CAMERA SETTINGS", font = xl_lbl_font, ui.ALIGN_CENTER, border_width = bd)
-    self.banner2_lbl = ui.Label(self, text = "CAMERA SETTINGS", font = xl_lbl_font, ui.ALIGN_CENTER, border_width = bd)
+    self.banner1_lbl = ui.Label(self, text = "CAMERA SETTINGS", font = xl_lbl_font, alignment = ui.ALIGN_CENTER, border_width = bd)
+    self.banner2_lbl = ui.Label(self, text = "CAMERA SETTINGS", font = xl_lbl_font, alignment = ui.ALIGN_CENTER, border_width = bd)
 
     # The save and back btns are also not reliant on the json.
     self.save_btn = ui.Button(self, title = "SAVE", font = xl_lbl_font, border_width = bd, background_color = "")
