@@ -107,6 +107,8 @@ class homeScreen(ui.View):
 					subview.action = self.game_result_btn_click
 				elif subview.name == "end_edit_btn":
 					subview.action = self.end_editing
+				elif subview.name == "analyze_btn":
+					subview.action = self.analyze_btn_click
 			# Next do the segment_control widget
 			elif isinstance(subview, ui.SegmentedControl):
 				if subview.name == "sc1":
@@ -184,6 +186,10 @@ class homeScreen(ui.View):
 
 		sound.play_effect("Woosh_2")
 		time.sleep(1)
+		
+	def analyze_btn_click(self):
+		# Navigate to the analyze_screen
+		pass
 	
 	def team_select(self, sender):
 		if sender.background_color == (0.140449, 0.341092, 0.842697, 1.0):
