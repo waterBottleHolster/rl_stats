@@ -33,7 +33,7 @@ class cameraControlsScreen(ui.View):
     self.back_btn.frame = (160, 568, 160, 32)
     
     # Now to create the bulk of the labels, look to the def_json.json file.
-    # def_json_dict has the json file's info while widget_dict contains the created widgets.d
+    # def_json_dict has the json file's info while widget_dict contains the created widgets.
     # Do all the camera-related widgets, then move onto the controller-related widgets.
     with open(def_json_fp, 'r') as f:
       self.def_json_dict = json.load(f)
@@ -49,15 +49,13 @@ class cameraControlsScreen(ui.View):
       
       # now do RHS second
       if self.def_json_dict["camera_settings"][key] == "textfield":
-        #self.subv = ui.View(self)
-        #self.subv.frame = (x + width, y, width, height)
         self.tf = ui.TextField(self)
         self.tf.frame = (x + width, y, width, height)
         self.tf.tint_color = 'black'
         self.tf.text_color = 'black'
         self.tf.border_width = bd
         self.tf.border_color = 'black'
-        #self.subv.add_subview(self.tf)
+        self.tf.font = ('Futura-CondensedExtraBold', 16)
         
         self.tfo = ObjCInstance(self.tf).textField()
         self.tfo.backgroundColor = ObjCClass('UIColor').colorWithRed_green_blue_alpha_(0, 0, 0, 0)
