@@ -5,7 +5,7 @@ from objc_util import *
 
 def_json_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-software~Pythonista3/Documents/json_files/def_json.json'
 
-bd = 2
+bd = 0
 xl_lbl_font = ("Futura-CondensedExtraBold", 30)
 sm_lbl_font = ("Futura-CondensedExtraBold", 18)
 
@@ -46,9 +46,9 @@ class cameraControlsScreen(ui.View):
         #self.subv.frame = (x + width, y, width, height)
         self.tf = ui.TextField(self)
         self.tf.frame = (x + width, y, width, height)
-        self.tf.tint_color = 'white'
-        self.tf.text_color = 'white'
-        self.tf.border_width = 2
+        self.tf.tint_color = 'black'
+        self.tf.text_color = 'black'
+        self.tf.border_width = bd
         self.tf.border_color = 'black'
         #self.subv.add_subview(self.tf)
         
@@ -59,6 +59,7 @@ class cameraControlsScreen(ui.View):
         
       elif self.def_json_dict["camera_settings"][key] == "checkbox":
         self.sc = ui.SegmentedControl(self, segments = ("yes", "no"), border_width = bd, border_color = 'white')
+        self.sc.selected_index = 1
         self.sc.frame = (x + width, y, width, height)
         self.widget_dict[key+"_sc"] = self.sc
 
