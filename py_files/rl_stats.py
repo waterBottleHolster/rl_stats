@@ -188,7 +188,7 @@ class homeScreen(ui.View):
 		sound.play_effect("Woosh_2")
 		time.sleep(1)
 		
-	def analyze_btn_click(self):
+	def analyze_btn_click(self, sender):
 		# Navigate to the analyze_screen
 		self.close()
 		self.wait_modal()
