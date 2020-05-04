@@ -58,8 +58,10 @@ class cameraControlsScreen(ui.View):
         self.widget_dict[key+"_txt"] = self.tf
         
       elif self.def_json_dict["camera_settings"][key] == "checkbox":
-        pass
-      
+        self.switch = ui.Switch(self)
+        self.switch.frame = (x + width, y, width, height)
+        self.widget_dict[key+"_switch"] = self.switch
+
       y = y + height
     
     self.add_subview(self.banner1_lbl)
