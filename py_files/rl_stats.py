@@ -189,7 +189,9 @@ class homeScreen(ui.View):
 		
 	def analyze_btn_click(self):
 		# Navigate to the analyze_screen
-		pass
+		self.close()
+		self.wait_modal()
+		v = ui.load_view("analyze_mode.pyui")
 	
 	def team_select(self, sender):
 		if sender.background_color == (0.140449, 0.341092, 0.842697, 1.0):
