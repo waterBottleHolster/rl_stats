@@ -59,11 +59,11 @@ class homeScreen(ui.View):
 		self.vehicle_ddb.items = self.vehicle_list
 
 		self.camera_ddb = drop_down_box.DropdownView()
-		self.camera_ddb.frame = (200, 560, 150, 45)
+		self.camera_ddb.frame = (200, 715, 150, 45)
 		self.camera_ddb.items = self.camera_list
 
 		self.controller_ddb = drop_down_box.DropdownView()
-		self.controller_ddb.frame = (200, 650, 150, 45)
+		self.controller_ddb.frame = (200, 755, 150, 45)
 		self.controller_ddb.items = self.controller_list
 
 		# Add each of the ddb's as subviews.
