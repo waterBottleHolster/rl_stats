@@ -1,0 +1,80 @@
+[
+  {
+    "nodes" : [
+      {
+        "nodes" : [
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{31, -75}, {320, 900}}",
+            "class" : "ImageView",
+            "attributes" : {
+              "frame" : "{{110, 400}, {100, 100}}",
+              "class" : "ImageView",
+              "name" : "iv1",
+              "uuid" : "0F0C1B9E-7312-4DB6-9D77-E509662190D9"
+            },
+            "selected" : true
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{74, 51}, {204, 32}}",
+            "class" : "Label",
+            "attributes" : {
+              "font_size" : 18,
+              "frame" : "{{85, 434}, {150, 32}}",
+              "uuid" : "E076DAD0-D9D3-419F-A6E6-F483E6F13BAC",
+              "class" : "Label",
+              "alignment" : "left",
+              "text" : "ANALYZE SCREEN",
+              "name" : "label1",
+              "font_name" : "<System>"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{114, 169}, {80, 48}}",
+            "class" : "Button",
+            "attributes" : {
+              "uuid" : "6C8937C7-E82D-4CA0-8343-A4E6A1A0B074",
+              "frame" : "{{120, 434}, {80, 32}}",
+              "title" : "BACK",
+              "class" : "Button",
+              "name" : "back_btn",
+              "font_size" : 15
+            },
+            "selected" : false
+          }
+        ],
+        "frame" : "{{0, 0}, {320, 600}}",
+        "class" : "ScrollView",
+        "attributes" : {
+          "uuid" : "9C9BC5C9-2485-4BD2-BEB8-430411E17EAE",
+          "frame" : "{{0, 140}, {320, 320}}",
+          "content_height" : 900,
+          "class" : "ScrollView",
+          "name" : "scrollview1",
+          "content_width" : 320
+        },
+        "selected" : false
+      }
+    ],
+    "frame" : "{{0, 0}, {320, 600}}",
+    "class" : "View",
+    "attributes" : {
+      "custom_class" : "analyzeScreen",
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    },
+    "selected" : false
+  }
+]
