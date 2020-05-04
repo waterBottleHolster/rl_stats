@@ -1,4 +1,5 @@
 import ui
+import rl_stats
 
 class analyzeScreen(ui.View):
   def __init__(self, *args, **kwargs):
@@ -11,7 +12,7 @@ class analyzeScreen(ui.View):
   def back_btn_click(self, sender):
     self.close()
     self.wait_modal()
-    from rl_stats import homeScreen
+    homeScreen = rl_stats.homeScreen
     v = ui.load_view("rl_stats.pyui")
 
 if __name__ == "__main__":
