@@ -17,6 +17,7 @@ class cameraControlsScreen(ui.View):
     self.iv1 = ui.ImageView(self)
     self.iv1.image = ui.Image.named(bg_img_fp)
     self.iv1.content_mode = ui.CONTENT_SCALE_ASPECT_FILL
+    self.iv1.frame = (0, 20, 275, 600)
     
     # The big banner labels aren't created from the json so do them first.
     self.banner1_lbl = ui.Label(self, text = "CAMERA SETTINGS", font = xl_lbl_font, alignment = ui.ALIGN_CENTER, border_width = bd)
