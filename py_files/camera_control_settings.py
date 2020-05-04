@@ -11,7 +11,7 @@ sm_lbl_font = ("Futura-CondensedExtraBold", 18)
 
 class cameraControlsScreen(ui.View):
   def __init__(self, *args, **kwargs):
-    self.frame = (0, 20, 375, 580)
+
     # The big banner labels aren't created from the json so do them first.
     self.banner1_lbl = ui.Label(self, text = "CAMERA SETTINGS", font = xl_lbl_font, alignment = ui.ALIGN_CENTER, border_width = bd)
     self.banner2_lbl = ui.Label(self, text = "CONTROLLER SETTINGS", font = xl_lbl_font, alignment = ui.ALIGN_CENTER, border_width = bd)
@@ -58,9 +58,9 @@ class cameraControlsScreen(ui.View):
         self.widget_dict[key+"_txt"] = self.tf
         
       elif self.def_json_dict["camera_settings"][key] == "checkbox":
-        self.switch = ui.Switch(self)
-        self.switch.frame = (x + width, y, width, height)
-        self.widget_dict[key+"_switch"] = self.switch
+        self.sc = ui.SegmentedControl(self, segments = ("yes", "no"), border_width = bd, border_color = 'white')
+        self.sc.frame = (x + width, y, width, height)
+        self.widget_dict[key+"_sc"] = self.sc
 
       y = y + height
     
