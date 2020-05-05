@@ -109,12 +109,15 @@ class cameraControlsScreen(ui.View):
         
         self.widget_dict["controller_"+key+"_txt"] = self.tf
 
-      elif self.def_json_dict["camera_settings"][key] == "combobox":
+      elif self.def_json_dict["camera_settings"][key] == "checkbox":
         self.sc = ui.SegmentedControl(self, segments = ("yes", "no"), border_width = bd, border_color = 'white')
         self.sc.selected_index = 1
         self.sc.frame = (x + width, y, width, height)
         self.widget_dict[key+"_sc"] = self.sc
       
+      elif self.def_json_dict["controller_settings"][key] == "combobox":
+        self.ddb = drop_down_box.DropdownView(self)
+        
       
       
     
