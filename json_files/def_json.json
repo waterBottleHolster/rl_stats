@@ -41,6 +41,9 @@
     "Dodge Deadzone:" : "textfield",
     "Controller Vibration" : "combobox",
     "Vibration Intensity" : "textfield",
-    "Ball Cam. Mode:" : "combobox"
+    "Ball Cam. Mode:" : "combobox",
+    "Push to Talk:" : "checkbox",
+    "Mouse Sens.:" : "textfield",
+    "KB Input Accel. Time:" : "textfield"
   }
 }
