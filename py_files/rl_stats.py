@@ -207,7 +207,8 @@ class homeScreen(ui.View):
 		# now that data is saved, reset the kickoff counter labels.
 		self["scrollview1"]["whiff_count_lbl"].text = ""
 		self["scrollview1"]["loss_count_lbl"].text = ""
-		self["scrollview1"]["wwin_count_lbl"].text = ""
+		self["scrollview1"]["win_count_lbl"].text = ""
+		self.["scrollview1"]["textview1"].text = ""
 		
 
 		sound.play_effect("Woosh_2")
