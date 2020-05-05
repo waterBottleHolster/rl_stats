@@ -188,13 +188,13 @@ class homeScreen(ui.View):
 
 		act_data = [
 				{"whiff" : self["scrollview1"]["whiff_count_lbl"].text, "lost" : self["scrollview1"]["loss_count_lbl"].text, "win" : self["scrollview1"]["win_count_lbl"].text},
-				{"mode" : game_mode_ddb.text, "competitive" : str(self["scrollview1"]["competitive_switch"].value), "party" : str(self["scrollview1"]["party_switch"].value)},
-				{"body" : vehicle_ddb.text, "topper" : self["scrollview1"]["topper_switch"].value, "antenna" : self["scrollview1"]["antenna_switch"].value},
+				{"mode" : self.game_mode_ddb.text, "competitive" : str(self["scrollview1"]["competitive_switch"].value), "party" : str(self["scrollview1"]["party_switch"].value)},
+				{"body" : self.vehicle_ddb.text, "topper" : self["scrollview1"]["topper_switch"].value, "antenna" : self["scrollview1"]["antenna_switch"].value},
 				{"notes" : self["scrollview1"]["textview1"].text},
 				curr_team,
 				sender.title,
-				camera_ddb.text,
-				controller_ddb.text
+				self.camera_ddb.text,
+				self.controller_ddb.text
 		]
 
 		json_dict[curr_time] = dict(zip(CATs, act_data))
