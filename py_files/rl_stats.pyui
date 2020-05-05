@@ -442,7 +442,7 @@
             "attributes" : {
               "flex" : "WHLRTB",
               "action" : "",
-              "segments" : "BLUE|ORANGE",
+              "segments" : "ORANGE|BLUE",
               "frame" : "{{100, 436}, {120, 29}}",
               "uuid" : "61744A5A-F4E5-4F82-AA48-C953695E2F62",
               "background_color" : "RGBA(0.140449,0.341092,0.842697,1.000000)",
