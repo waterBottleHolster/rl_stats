@@ -264,13 +264,13 @@
             "class" : "Label",
             "attributes" : {
               "flex" : "WHLRTB",
-              "font_size" : 22,
+              "name" : "label3",
               "frame" : "{{85, 284}, {150, 32}}",
               "uuid" : "006F6610-992C-4C8D-B04B-79E99F923267",
               "class" : "Label",
               "alignment" : "left",
               "text" : "Partied Up?",
-              "name" : "label3",
+              "font_size" : 22,
               "font_name" : "Futura-CondensedExtraBold"
             },
             "selected" : false
@@ -337,13 +337,13 @@
             "class" : "Label",
             "attributes" : {
               "flex" : "WHLRTB",
-              "name" : "label5",
+              "font_size" : 22,
               "frame" : "{{85, 284}, {150, 32}}",
               "uuid" : "AEC21452-4130-49E8-AE7A-47C1E9253576",
               "class" : "Label",
               "alignment" : "left",
               "text" : "Topper?",
-              "font_size" : 22,
+              "name" : "label5",
               "font_name" : "Futura-CondensedExtraBold"
             },
             "selected" : false
@@ -356,13 +356,13 @@
             "class" : "Label",
             "attributes" : {
               "flex" : "WHLRTB",
-              "name" : "label6",
+              "font_size" : 22,
               "frame" : "{{85, 284}, {150, 32}}",
               "uuid" : "CF03F0E3-3898-4F0E-A75A-A10B41E7CD1D",
               "class" : "Label",
               "alignment" : "left",
               "text" : "Antenna?",
-              "font_size" : 22,
+              "name" : "label6",
               "font_name" : "Futura-CondensedExtraBold"
             },
             "selected" : false
@@ -477,13 +477,12 @@
             "nodes" : [
 
             ],
-            "frame" : "{{36, 562}, {94, 52}}",
+            "frame" : "{{0, 562}, {125, 52}}",
             "class" : "Button",
             "attributes" : {
               "uuid" : "2D926202-7605-4715-BCDA-395CBE6F89C2",
               "font_size" : 15,
               "corner_radius" : 15,
-              "background_color" : "RGBA(0.046504,0.046504,0.279026,1.000000)",
               "frame" : "{{120, 584}, {80, 32}}",
               "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
               "border_width" : 2,
@@ -502,15 +501,14 @@
             "nodes" : [
 
             ],
-            "frame" : "{{139, 562}, {94, 52}}",
+            "frame" : "{{125, 562}, {125, 52}}",
             "class" : "Button",
             "attributes" : {
               "uuid" : "84906BF1-7F20-45C6-A27D-8ED0D47C068C",
               "font_size" : 15,
               "corner_radius" : 15,
-              "background_color" : "RGBA(0.329588,0.068664,0.068664,1.000000)",
               "frame" : "{{120, 584}, {80, 32}}",
-              "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "tint_color" : "RGBA(0.842697,0.842697,0.842697,1.000000)",
               "border_width" : 2,
               "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
               "custom_attributes" : "",
@@ -527,13 +525,12 @@
             "nodes" : [
 
             ],
-            "frame" : "{{242.5, 562}, {93.5, 52}}",
+            "frame" : "{{250, 562}, {125, 52}}",
             "class" : "Button",
             "attributes" : {
               "uuid" : "94B66E69-33D3-40E9-8502-0D7C78B1D227",
               "font_size" : 15,
               "corner_radius" : 15,
-              "background_color" : "RGBA(0.307584,0.029494,0.353933,1.000000)",
               "frame" : "{{120, 584}, {80, 32}}",
               "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
               "border_width" : 2,
@@ -552,15 +549,14 @@
             "nodes" : [
 
             ],
-            "frame" : "{{36, 622}, {94, 52}}",
+            "frame" : "{{75, 613}, {125, 52}}",
             "class" : "Button",
             "attributes" : {
               "uuid" : "739BA920-665E-4743-8014-E57A5E1BEE22",
               "font_size" : 15,
               "corner_radius" : 15,
-              "background_color" : "RGBA(0.307584,0.029494,0.353933,1.000000)",
               "frame" : "{{120, 584}, {80, 32}}",
-              "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "tint_color" : "RGBA(0.926966,0.926966,0.926966,1.000000)",
               "border_width" : 2,
               "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
               "custom_attributes" : "",
@@ -577,15 +573,14 @@
             "nodes" : [
 
             ],
-            "frame" : "{{139, 622}, {94, 52}}",
+            "frame" : "{{200, 613}, {125, 52}}",
             "class" : "Button",
             "attributes" : {
               "uuid" : "1BD81F55-7080-4E72-958F-53CE9CE49421",
               "font_size" : 15,
               "corner_radius" : 15,
-              "background_color" : "RGBA(0.307584,0.029494,0.353933,1.000000)",
               "frame" : "{{120, 584}, {80, 32}}",
-              "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+              "tint_color" : "RGBA(0.803371,0.803371,0.803371,1.000000)",
               "border_width" : 2,
               "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
               "custom_attributes" : "",
@@ -596,7 +591,7 @@
               "name" : "disconnect_btn",
               "flex" : "WHLRTB"
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -656,8 +651,8 @@
               "class" : "Label",
               "alignment" : "right",
               "text" : "CAMERA:",
-              "name" : "label10",
-              "font_size" : 22
+              "font_size" : 22,
+              "name" : "label10"
             },
             "selected" : false
           },
@@ -675,8 +670,8 @@
               "class" : "Label",
               "alignment" : "right",
               "text" : "CONTROLLER:",
-              "name" : "label11",
-              "font_size" : 22
+              "font_size" : 22,
+              "name" : "label11"
             },
             "selected" : false
           },
@@ -688,13 +683,13 @@
             "class" : "Button",
             "attributes" : {
               "flex" : "WHLRTB",
-              "name" : "camera_btn",
+              "font_size" : 15,
               "frame" : "{{148, 434}, {80, 32}}",
               "tint_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
               "title" : "Button",
               "uuid" : "1D8B8110-6BDF-48FA-B6B6-9A98B3CAF148",
               "class" : "Button",
-              "font_size" : 15,
+              "name" : "camera_btn",
               "image_name" : "iob:gear_a_256"
             },
             "selected" : false
@@ -713,8 +708,8 @@
               "title" : "Button",
               "uuid" : "FA235EE9-5123-4E5E-8747-43E7DD12C738",
               "class" : "Button",
-              "font_size" : 15,
-              "name" : "controller_btn"
+              "name" : "controller_btn",
+              "font_size" : 15
             },
             "selected" : false
           }
