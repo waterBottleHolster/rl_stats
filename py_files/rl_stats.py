@@ -52,19 +52,27 @@ class homeScreen(ui.View):
 			
 		# Create the comboboxes.
 		self.game_mode_ddb = drop_down_box.DropdownView()
-		self.game_mode_ddb.frame = (15, 160, 150, 45)
+		self.game_mode_ddb.flex = 'whlrtb'
+		self.game_mode_ddb.tint_color = 'black'
+		self.game_mode_ddb.frame = (10, 160, 160, 45)
 		self.game_mode_ddb.items = self.game_mode_list
 
 		self.vehicle_ddb = drop_down_box.DropdownView()
-		self.vehicle_ddb.frame = (15, 260, 150, 45)
+		self.vehicle_ddb.flex = 'whlrtb'
+		self.vehicle_ddb.tint_color = 'black'
+		self.vehicle_ddb.frame = (10, 260, 160, 45)
 		self.vehicle_ddb.items = self.vehicle_list
 
 		self.camera_ddb = drop_down_box.DropdownView()
-		self.camera_ddb.frame = (200, 683, 150, 45)
+		self.camera_ddb.flex = 'whlrtb'
+		self.camera_ddb.tint_color = 'black'
+		self.camera_ddb.frame = (150, 710, 165, 45)
 		self.camera_ddb.items = self.camera_list
 
 		self.controller_ddb = drop_down_box.DropdownView()
-		self.controller_ddb.frame = (200, 722, 150, 45)
+		self.controller_ddb.flex = 'whlrtb'
+		self.controller_ddb.tint_color = 'black'
+		self.controller_ddb.frame = (150, 750, 165, 45)
 		self.controller_ddb.items = self.controller_list
 
 		# Add each of the ddb's as subviews.
@@ -81,7 +89,7 @@ class homeScreen(ui.View):
 		# Change the btn fonts.
 		for item in self['scrollview1'].subviews:
 			if isinstance(item, ui.Button):
-				item.font = ('Futura-CondensedExtraBold', 18)
+				item.font = ('Futura-CondensedExtraBold', 22)
 
 		# Finally, assign actions to each of the buttons.
 		self.set_actions()
@@ -205,7 +213,6 @@ class homeScreen(ui.View):
 	def end_editing(self, sender):
 		# minimize the keyboard once done typing.
 		self["scrollview1"]["textview1"].end_editing()
-		self["scrollview1"][self.camera_ddb].end_editing()
 
 if __name__ == "__main__":
 	view = ui.load_view()
