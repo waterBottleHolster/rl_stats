@@ -77,12 +77,14 @@ class homeScreen(ui.View):
 		self.camera_ddb.tint_color = 'black'
 		self.camera_ddb.frame = (150, 710, 165, 45)
 		self.camera_ddb.items = self.camera_list
+		self.camera_ddb.text = "profile1"
 
 		self.controller_ddb = drop_down_box.DropdownView()
 		self.controller_ddb.flex = 'whlrtb'
 		self.controller_ddb.tint_color = 'black'
 		self.controller_ddb.frame = (150, 750, 165, 45)
 		self.controller_ddb.items = self.controller_list
+		self.controller_ddb.text = "KBM1"
 
 		# Add each of the ddb's as subviews.
 		self['scrollview1'].add_subview(self.game_mode_ddb)
