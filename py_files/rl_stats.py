@@ -32,7 +32,7 @@ class homeScreen(ui.View):
 		#    - lastly the function that assigns actions to each of the btns is called.
 		
 		# I can't add dropdownviews with the UI editor, so do it here.
-		# Step 1: obtain the lists that'll populate the ddb's from def_json.json
+		# Step 1a: obtain the lists that'll populate the first two ddb's from def_json.json
 		self.def_json_dict = {}
 		with open(def_json_fp, 'r') as f:
 			self.def_json_dict = json.load(f)
@@ -43,11 +43,20 @@ class homeScreen(ui.View):
 		self.vehicle_list = []
 		for item in self.def_json_dict["vehicles"]:
 			self.vehicle_list.append(item)
+			
+		# Step 1b: obtain the lists that'll populate the second two ddb's from their jsons.
+		self.camera_json_dict = {}
+		with open(camera_json_fp, 'r') as f:
+			self.camera_json_dict = json.load(f)
 		self.camera_list = []
-		for item in self.def_json_dict["camera_settings"]:
+		for item in self.camera_json_dict["camera_settings"]:
 			self.camera_list.append(item)
+			
+		self.controller_json_dict = {}
+		with open(controller_json_fp, 'r') as f:
+			self.controller_json_dict = json.load(f)
 		self.controller_list = []
-		for item in self.def_json_dict["controller_settings"]:
+		for item in self.controller_json_dict["controller_settings"]:
 			self.controller_list.append(item)
 			
 		# Create the comboboxes.
