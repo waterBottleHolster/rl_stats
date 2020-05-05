@@ -201,6 +201,12 @@ class homeScreen(ui.View):
 
 		with open(stats_json_fp, "w") as f:
 			json.dump(json_dict, f, indent = 2)
+			
+		# now that data is saved, reset the kickoff counter labels.
+		self["scrollview1"]["whiff_count_lbl"].text = ""
+		self["scrollview1"]["loss_count_lbl"].text = ""
+		self["scrollview1"]["wwin_count_lbl"].text = ""
+		
 
 		sound.play_effect("Woosh_2")
 		time.sleep(1)
