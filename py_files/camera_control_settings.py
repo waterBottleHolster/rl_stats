@@ -46,7 +46,7 @@ class cameraControlsScreen(ui.View):
       # do LHS first
       self.hdr_lbl = ui.Label(self, text = key, font = sm_lbl_font, alignment = ui.ALIGN_RIGHT, border_width = bd)
       self.hdr_lbl.frame = (x, y, width, height)
-      self.widget_dict[key] = self.hdr_lbl
+      self.widget_dict["camera_" + key] = self.hdr_lbl
       
       # now do RHS second
       if self.def_json_dict["camera_settings"][key] == "textfield":
@@ -61,7 +61,7 @@ class cameraControlsScreen(ui.View):
         self.tfo = ObjCInstance(self.tf).textField()
         self.tfo.backgroundColor = ObjCClass('UIColor').colorWithRed_green_blue_alpha_(0, 0, 0, 0)
         
-        self.widget_dict[key+"_txt"] = self.tf
+        self.widget_dict["camera_"+key+"_txt"] = self.tf
         
       elif self.def_json_dict["camera_settings"][key] == "checkbox":
         self.sc = ui.SegmentedControl(self, segments = ("yes", "no"), border_width = bd, border_color = 'white')
@@ -78,16 +78,51 @@ class cameraControlsScreen(ui.View):
       self.add_subview(self.widget_dict[item])
       
     # For the control section I want them grouped under a view, except for input_device_dropdown.
-    self.input_hdr_lbl = ui.Label(self, text = "Input Device:", font = sm_lbl_font, alignment = ui.ALIGN_RIGHT, border_width = bd)
-    self.input_hdr_lbl.frame(0, 280, 187.5, 20)
-    self.input_ddb = drop_down_box.DropdownView()
-    self.input_ddb.items = ['Keyboard', 'Controller']
-    self.input_ddb.frame = (187.5, 280, 187.5, 20)
-    # Depending on which input is selected a different view will appear.
-    self.kbm_box = ui.View(self)
-    self.controller_box = ui.View(self)
+    #self.input_hdr_lbl = ui.Label(self, text = "Input Device:", font = sm_lbl_font, alignment = ui.ALIGN_RIGHT, border_width = bd)
+    #self.input_hdr_lbl.frame(0, 280, 187.5, 20)
+    #self.input_ddb = drop_down_box.DropdownView()
+    #self.input_ddb.items = ['Keyboard', 'Controller']
+    #self.input_ddb.action = lambda a: self.device_chosen
+    #self.input_ddb.frame = (187.5, 280, 187.5, 20)
     
+    # push y down a little
+    y = 300
+
+    for key in self.def_json_dict["controller_settings"]:
+      # do LHS first
+      self.hdr_lbl = ui.Label(self, text = key, font = sm_lbl_font, alignment = ui.ALIGN_RIGHT, border_width = bd)
+      self.hdr_lbl.frame = (x, y, width, height)
+      self.widget_dict["controller_"+key] = self.hdr_lbl
+      
+      # now do RHS second
+      if self.def_json_dict["controller_settings"][key] == "textfield":
+        self.tf = ui.TextField(self)
+        self.tf.frame = (x + width, y, width, height)
+        self.tf.tint_color = 'black'
+        self.tf.text_color = 'black'
+        self.tf.border_width = bd
+        self.tf.border_color = 'black'
+        self.tf.font = ('Futura-CondensedExtraBold', 16)
+        
+        self.tfo = ObjCInstance(self.tf).textField()
+        self.tfo.backgroundColor = ObjCClass('UIColor').colorWithRed_green_blue_alpha_(0, 0, 0, 0)
+        
+        self.widget_dict["controller_"+key+"_txt"] = self.tf
+
+      elif self.def_json_dict["camera_settings"][key] == "combobox":
+        self.sc = ui.SegmentedControl(self, segments = ("yes", "no"), border_width = bd, border_color = 'white')
+        self.sc.selected_index = 1
+        self.sc.frame = (x + width, y, width, height)
+        self.widget_dict[key+"_sc"] = self.sc
+      
+      
+      
     
+  def device_chosen(self, sender):
+    # Once a device has been chosen the fields that don't apply can be greyed out.
+    #.enabled = False
+    if sender.text == "Keyboard":
+      pass
     
 
 if __name__ == "__main__":
