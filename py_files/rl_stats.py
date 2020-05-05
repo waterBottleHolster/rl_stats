@@ -49,14 +49,14 @@ class homeScreen(ui.View):
 		with open(camera_json_fp, 'r') as f:
 			self.camera_json_dict = json.load(f)
 		self.camera_list = []
-		for item in self.camera_json_dict["camera_settings"]:
+		for item in self.camera_json_dict:
 			self.camera_list.append(item)
 			
 		self.controller_json_dict = {}
 		with open(controller_json_fp, 'r') as f:
 			self.controller_json_dict = json.load(f)
 		self.controller_list = []
-		for item in self.controller_json_dict["controller_settings"]:
+		for item in self.controller_json_dict:
 			self.controller_list.append(item)
 			
 		# Create the comboboxes.
@@ -199,8 +199,8 @@ class homeScreen(ui.View):
 
 		json_dict[curr_time] = dict(zip(CATs, act_data))
 
-		#with open(stats_json_fp, "w") as f:
-			#json.dump(json_dict, f, indent = 2)
+		with open(stats_json_fp, "w") as f:
+			json.dump(json_dict, f, indent = 2)
 
 		sound.play_effect("Woosh_2")
 		time.sleep(1)
