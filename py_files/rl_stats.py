@@ -15,8 +15,9 @@ controller_json_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~om
 
 camera_json_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-software~Pythonista3/Documents/json_files/camera_settings.json'
 
-bg_img_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-software~Pythonista3/Documents/rocket_league_pics/smoothy.png'
+blue_img_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-software~Pythonista3/Documents/rocket_league_pics/plain_blue_bg.png'
 
+orange_img_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-software~Pythonista3/Documents/rocket_league_pics/plain_orange_bg.png'
 
 class homeScreen(ui.View):
 	def __init__(self, *args, **kwargs):
