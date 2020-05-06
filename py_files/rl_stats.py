@@ -95,7 +95,6 @@ class homeScreen(ui.View):
 		# The background image also gets done here.
 		# create the background image (unsure how to do custom image in ui mode...)
 		self['scrollview1']['iv1'].image = ui.Image.named(bg_img_fp)
-		self['scrollview1']['iv1'].content_mode = ui.CONTENT_SCALE_ASPECT_FILL
 		
 		# Change the btn fonts.
 		for item in self['scrollview1'].subviews:
@@ -224,9 +223,12 @@ class homeScreen(ui.View):
 	def team_select(self, sender):
 		if sender.background_color == (0.140449, 0.341092, 0.842697, 1.0):
 			sender.background_color = (0.842697, 0.391252, 0.210674, 1.0)
-			# This means team == BLUE
+			# This means team == ORANGE
+			self['scrollview1']['iv1'].image = ui.Image.named(orng_img_fp)
 		else:
 			sender.background_color = (0.140449, 0.341092, 0.842697, 1.0)
+			# This means team == BLUE
+			self['scrollview1']['iv1'].image = ui.Image.named(blue_img_fp)
 			
 	def end_editing(self, sender):
 		# minimize the keyboard once done typing.
