@@ -14,6 +14,9 @@ class analyzeScreen(ui.View):
     self.wait_modal()
     homeScreen = rl_stats.homeScreen
     v = ui.load_view("rl_stats.pyui")
+    
+  # I want a way to select an independant var and then return the win-loss record.
+  # Then upgrade to be able to do n-number of independant vars, still returning the win-loss record.
 
 if __name__ == "__main__":
   v = ui.load_view()
