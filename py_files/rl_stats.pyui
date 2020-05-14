@@ -264,13 +264,13 @@
             "class" : "Label",
             "attributes" : {
               "flex" : "WHLRTB",
-              "name" : "label3",
+              "font_size" : 22,
               "frame" : "{{85, 284}, {150, 32}}",
               "uuid" : "006F6610-992C-4C8D-B04B-79E99F923267",
               "class" : "Label",
               "alignment" : "left",
               "text" : "Partied Up?",
-              "font_size" : 22,
+              "name" : "label3",
               "font_name" : "Futura-CondensedExtraBold"
             },
             "selected" : false
@@ -337,13 +337,13 @@
             "class" : "Label",
             "attributes" : {
               "flex" : "WHLRTB",
-              "font_size" : 22,
+              "name" : "label5",
               "frame" : "{{85, 284}, {150, 32}}",
               "uuid" : "AEC21452-4130-49E8-AE7A-47C1E9253576",
               "class" : "Label",
               "alignment" : "left",
               "text" : "Topper?",
-              "name" : "label5",
+              "font_size" : 22,
               "font_name" : "Futura-CondensedExtraBold"
             },
             "selected" : false
@@ -356,13 +356,13 @@
             "class" : "Label",
             "attributes" : {
               "flex" : "WHLRTB",
-              "font_size" : 22,
+              "name" : "label6",
               "frame" : "{{85, 284}, {150, 32}}",
               "uuid" : "CF03F0E3-3898-4F0E-A75A-A10B41E7CD1D",
               "class" : "Label",
               "alignment" : "left",
               "text" : "Antenna?",
-              "name" : "label6",
+              "font_size" : 22,
               "font_name" : "Futura-CondensedExtraBold"
             },
             "selected" : false
@@ -442,14 +442,14 @@
             "attributes" : {
               "flex" : "WHLRTB",
               "action" : "",
-              "segments" : "ORANGE|BLUE",
+              "segments" : "BLUE|ORANGE",
               "frame" : "{{100, 436}, {120, 29}}",
               "uuid" : "61744A5A-F4E5-4F82-AA48-C953695E2F62",
               "background_color" : "RGBA(0.140449,0.341092,0.842697,1.000000)",
               "class" : "SegmentedControl",
               "name" : "sc1"
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -591,7 +591,7 @@
               "name" : "disconnect_btn",
               "flex" : "WHLRTB"
             },
-            "selected" : true
+            "selected" : false
           },
           {
             "nodes" : [
@@ -622,7 +622,7 @@
               "uuid" : "14DA436C-7F5D-4919-B592-51D2058121C6",
               "font_size" : 20,
               "corner_radius" : 15,
-              "background_color" : "RGBA(0.046504,0.046504,0.279026,1.000000)",
+              "background_color" : "RGBA(0.105373,0.047897,0.249064,1.000000)",
               "frame" : "{{120, 434}, {80, 32}}",
               "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
               "border_width" : 2,
@@ -651,8 +651,8 @@
               "class" : "Label",
               "alignment" : "right",
               "text" : "CAMERA:",
-              "font_size" : 22,
-              "name" : "label10"
+              "name" : "label10",
+              "font_size" : 22
             },
             "selected" : false
           },
@@ -670,8 +670,8 @@
               "class" : "Label",
               "alignment" : "right",
               "text" : "CONTROLLER:",
-              "font_size" : 22,
-              "name" : "label11"
+              "name" : "label11",
+              "font_size" : 22
             },
             "selected" : false
           },
@@ -683,13 +683,13 @@
             "class" : "Button",
             "attributes" : {
               "flex" : "WHLRTB",
-              "font_size" : 15,
+              "name" : "camera_btn",
               "frame" : "{{148, 434}, {80, 32}}",
               "tint_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
               "title" : "Button",
               "uuid" : "1D8B8110-6BDF-48FA-B6B6-9A98B3CAF148",
               "class" : "Button",
-              "name" : "camera_btn",
+              "font_size" : 15,
               "image_name" : "iob:gear_a_256"
             },
             "selected" : false
@@ -708,8 +708,8 @@
               "title" : "Button",
               "uuid" : "FA235EE9-5123-4E5E-8747-43E7DD12C738",
               "class" : "Button",
-              "name" : "controller_btn",
-              "font_size" : 15
+              "font_size" : 15,
+              "name" : "controller_btn"
             },
             "selected" : false
           }
