@@ -17,7 +17,8 @@ camera_json_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-so
 
 blue_img_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-software~Pythonista3/Documents/rocket_league_pics/plain_blue_bg.png'
 
-orange_img_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-software~Pythonista3/Documents/rocket_league_pics/plain_orange_bg.png'
+orng_img_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-software~Pythonista3/Documents/rocket_league_pics/plain_orange_bg.png'
+
 
 class homeScreen(ui.View):
 	def __init__(self, *args, **kwargs):
@@ -78,14 +79,14 @@ class homeScreen(ui.View):
 		self.camera_ddb.tint_color = 'black'
 		self.camera_ddb.frame = (150, 710, 165, 45)
 		self.camera_ddb.items = self.camera_list
-		self.camera_ddb.text = "profile1"
+		self.camera_ddb.text = 'profile1'
 
 		self.controller_ddb = drop_down_box.DropdownView()
 		self.controller_ddb.flex = 'whlrtb'
 		self.controller_ddb.tint_color = 'black'
 		self.controller_ddb.frame = (150, 750, 165, 45)
 		self.controller_ddb.items = self.controller_list
-		self.controller_ddb.text = "KBM1"
+		self.controller_ddb.text = 'KBM1'
 
 		# Add each of the ddb's as subviews.
 		self['scrollview1'].add_subview(self.game_mode_ddb)
@@ -95,7 +96,8 @@ class homeScreen(ui.View):
 		
 		# The background image also gets done here.
 		# create the background image (unsure how to do custom image in ui mode...)
-		self['scrollview1']['iv1'].image = ui.Image.named(bg_img_fp)
+		self['scrollview1']['iv1'].image = ui.Image.named(blue_img_fp)
+		#self['scrollview1']['iv1'].content_mode = ui.CONTENT_SCALE_ASPECT_FILL
 		
 		# Change the btn fonts.
 		for item in self['scrollview1'].subviews:
@@ -182,7 +184,7 @@ class homeScreen(ui.View):
 		# Team is special because it yields 0 or 1 and I'd rather have strings ORANGE/BLUE.
 		if self["scrollview1"]["sc1"].selected_index == 0:
 			curr_team = "Orange"
-		elif self["scrollview0.1"]["sc1"].selected_index == 1:
+		elif self["scrollview1"]["sc1"].selected_index == 1:
 			curr_team = "Blue"
 
 		# CATs is short for categories
@@ -204,12 +206,10 @@ class homeScreen(ui.View):
 		with open(stats_json_fp, "w") as f:
 			json.dump(json_dict, f, indent = 2)
 			
-		# now that data is saved, reset the kickoff counter labels.
-		self["scrollview1"]["whiff_count_lbl"].text = ""
-		self["scrollview1"]["loss_count_lbl"].text = ""
-		self["scrollview1"]["win_count_lbl"].text = ""
-		self.["scrollview1"]["textview1"].text = ""
-		
+		self['scrollview1']['whiff_count_lbl'].text = ''
+		self['scrollview1']['loss_count_lbl'].text = ''
+		self['scrollview1']['win_count_lbl'].text = ''
+		self['scrollview1']['textview1'].text = ''
 
 		sound.play_effect("Woosh_2")
 		time.sleep(1)
@@ -224,12 +224,17 @@ class homeScreen(ui.View):
 	def team_select(self, sender):
 		if sender.background_color == (0.140449, 0.341092, 0.842697, 1.0):
 			sender.background_color = (0.842697, 0.391252, 0.210674, 1.0)
-			# This means team == ORANGE
+			# This means team == orange
 			self['scrollview1']['iv1'].image = ui.Image.named(orng_img_fp)
+			self['scrollview1']['analyze_btn'].background_color="#6A321c"
 		else:
 			sender.background_color = (0.140449, 0.341092, 0.842697, 1.0)
-			# This means team == BLUE
+			# This means team == blue
 			self['scrollview1']['iv1'].image = ui.Image.named(blue_img_fp)
+			self['scrollview1']['analyze_btn'].background_color="#1a0c3f"
+			
+			#6a321c deep orange
+			#1a0c3f deep blue
 			
 	def end_editing(self, sender):
 		# minimize the keyboard once done typing.
