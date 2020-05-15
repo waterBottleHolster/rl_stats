@@ -6,6 +6,7 @@ import time
 import Image
 import sound
 import analyze_mode
+import console
 
 def_json_fp = '/private/var/mobile/Library/Mobile Documents/iCloud~com~omz-software~Pythonista3/Documents/json_files/def_json.json'
 
@@ -211,6 +212,7 @@ class homeScreen(ui.View):
 		self['scrollview1']['win_count_lbl'].text = ''
 		self['scrollview1']['textview1'].text = ''
 
+		console.hud_alert("SAVED")
 		sound.play_effect("Woosh_2")
 		time.sleep(1)
 		
